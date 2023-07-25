@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Николай Строкин](https://up.htmlacademy.ru/profession/frontender/17/adaptive/29/user/2329039).
-* Наставник: `Артём Картавый`(https://htmlacademy.ru/profile/artem_k).
+* Наставник: `Артём Картавый`.
 
 ---
 
