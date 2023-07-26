@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Денис Яндыганов](https://up.htmlacademy.ru/adaptive/29/user/2373365).
-* Наставник: `Неизвестно`.
+* Студент: [Николай Строкин](https://up.htmlacademy.ru/profession/frontender/17/adaptive/29/user/2329039).
+* Наставник: `Артём Картавый`.
 
 ---
 
