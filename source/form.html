@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+
+  <header class="main-header">
+    <a href="#" class="main-header__logo logo">
+      <img class="logo__icon logo__icon--primary" src="#" width="33" height="38" alt="Логотип «Кэт энерджи».">
+      <img class="logo__title" src="#" width="101" height="18" alt="Заголовок «Кэт энерджи».">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a href="#">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="form-container">
+
+    <section class="appointment">
+      <h2 class="appointment__title">Подбор программы</h2>
+      <p class="appointment__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+
+      <form class="appointment__form form" action="https://echo.htmlacademy.ru/" method="post">
+
+        <div class="form__cats-data cats-data">
+          <div class="cats-data__wrapper">
+            <label class="cats-data__label" for="cats-name">Имя:*</label>
+            <input class="cats-data__input" id="cats-name" type="text" name="cats-name"
+              placeholder="Укажите имя питомца" value="Барсик" required>
+            <label class="cats-data__label" for="cats-weight">Вес (кг):*</label>
+            <input class="cats-data__input" id="cats-weight" type="number" name="cats-weight"
+              placeholder="Укажите вес питомца" value="7" required>
+            <label class="cats-data__label" for="cats-age">Возраст (лет):</label>
+            <input class="cats-data__input" id="cats-age" type="number" name="cats-age"
+              placeholder="Укажите возраст питомца" value="7">
+          </div>
+          <fieldset class="cats-data__strategy strategy">
+            <legend class="visually-hidden">Выбор стратегии питания.</legend>
+            <ul class="strategy__list">
+              <li class="strategy__item">
+                <label class="strategy__control control">
+                  <input class="control__input visually-hidden" type="radio" name="strategy-fit" value="strategy-fit"
+                    checked>
+                  <span class="control__radio"></span>
+                  <span class="control__label">Похудение</span>
+                </label>
+              </li>
+              <li class="catalog-item">
+                <label class="strategy__control control">
+                  <input class="control__input visually-hidden" type="radio" name="strategy-gain" value="strategy-gain"
+                    checked>
+                  <span class="control__radio"></span>
+                  <span class="control__label">Набор массы</span>
+                </label>
+              </li>
+              <li class="catalog-item">
+                <label class="strategy__control control">
+                  <input class="control__input visually-hidden" type="radio" name="strategy-none" value="strategy-none"
+                    checked>
+                  <span class="control__radio"></span>
+                  <span class="control__label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <div class="form__owner-data owner-data">
+            <h3 class="owner-data__title">Контактные данные (владельца кота)</h3>
+            <div class="owner-data__wrapper">
+              <label class="owner-data__label" for="E-mail">E-mail:*</label>
+              <input class="owner-data__input" id="E-mail" type="email" name="E-mail" placeholder="Укажите ваш e-mail"
+                value="kuklachev@gmail.com" required>
+              <label class="owner-data__label" for="phone">Телефон:*</label>
+              <input class="owner-data__input" id="phone" type="tel" name="phone" placeholder="Укажите ваш телефон"
+                value="8 (960) 900-60-90" required>
+            </div>
+          </div>
+
+
+        </div>
+      </form>
+    </section>
+
+    <footer class="main-footer">
+      <div class="main-footer__adress adress">
+        <div class="adress__wrapper">
+          <h2 class="adress__title">Приглашаем к сотрудничеству дилеров!</b>
+            <p class="adress__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <img class="adress__image" src="#" width="320" height="362" alt="Точка на карте.">
+      </div>
+      <div class="main-footer__contacts contacts">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a href="#" class="contacts-logo logo">
+              <img class="logo__title" src="#" width="128" height="24" alt="Заголовок «Кэт энерджи».">
+            </a>
+          </li>
+          <li class="contacts__item contacts-item">
+            <ul class="contacts-item__list social">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">
+                    Мы во Вконтакте.
+                  </span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">
+                    Мы в Телеграм.
+                  </span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">
+                    Мы в YouTube.
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__academy-link" href="htmlacademy.ru">
+              <span class="visually-hidden">
+                HTML Академия.
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
