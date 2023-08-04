@@ -45,24 +45,24 @@
 
       <form class="appointment__form form" action="https://echo.htmlacademy.ru/" method="post">
 
-        <div class="form__cats-data cats-data">
-          <div class="cats-data__wrapper">
-            <label class="cats-data__label" for="cats-name">Имя:*</label>
-            <input class="cats-data__input" id="cats-name" type="text" name="cats-name"
-              placeholder="Укажите имя питомца" value="Барсик" required>
-            <label class="cats-data__label" for="cats-weight">Вес (кг):*</label>
-            <input class="cats-data__input" id="cats-weight" type="number" name="cats-weight"
+        <div class="form__cat-data cat-data">
+          <div class="cat-data__wrapper">
+            <label class="cat-data__label" for="cat-name">Имя:*</label>
+            <input class="cat-data__input" id="cat-name" type="text" name="cat-name" placeholder="Укажите имя питомца"
+              value="Барсик" required>
+            <label class="cat-data__label" for="cat-weight">Вес (кг):*</label>
+            <input class="cat-data__input" id="cat-weight" type="number" name="cat-weight"
               placeholder="Укажите вес питомца" value="7" required>
-            <label class="cats-data__label" for="cats-age">Возраст (лет):</label>
-            <input class="cats-data__input" id="cats-age" type="number" name="cats-age"
+            <label class="cat-data__label" for="cat-age">Возраст (лет):</label>
+            <input class="cat-data__input" id="cat-age" type="number" name="cat-age"
               placeholder="Укажите возраст питомца" value="7">
           </div>
-          <fieldset class="cats-data__strategy strategy">
+          <fieldset class="cat-data__strategy strategy">
             <legend class="visually-hidden">Выбор стратегии питания.</legend>
             <ul class="strategy__list">
               <li class="strategy__item">
                 <label class="strategy__control control">
-                  <input class="control__input visually-hidden" type="radio" name="strategy-fit" value="strategy-fit"
+                  <input class="control__input visually-hidden" type="radio" name="strategy-plan" value="fit"
                     checked>
                   <span class="control__radio"></span>
                   <span class="control__label">Похудение</span>
@@ -70,38 +70,85 @@
               </li>
               <li class="catalog-item">
                 <label class="strategy__control control">
-                  <input class="control__input visually-hidden" type="radio" name="strategy-gain" value="strategy-gain"
-                    checked>
+                  <input class="control__input visually-hidden" type="radio" name="strategy-plan" value="gain">
                   <span class="control__radio"></span>
                   <span class="control__label">Набор массы</span>
                 </label>
               </li>
               <li class="catalog-item">
                 <label class="strategy__control control">
-                  <input class="control__input visually-hidden" type="radio" name="strategy-none" value="strategy-none"
-                    checked>
+                  <input class="control__input visually-hidden" type="radio" name="strategy-plan" value="none">
                   <span class="control__radio"></span>
                   <span class="control__label">Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-
-          <div class="form__owner-data owner-data">
-            <h3 class="owner-data__title">Контактные данные (владельца кота)</h3>
-            <div class="owner-data__wrapper">
-              <label class="owner-data__label" for="E-mail">E-mail:*</label>
-              <input class="owner-data__input" id="E-mail" type="email" name="E-mail" placeholder="Укажите ваш e-mail"
-                value="kuklachev@gmail.com" required>
-              <label class="owner-data__label" for="phone">Телефон:*</label>
-              <input class="owner-data__input" id="phone" type="tel" name="phone" placeholder="Укажите ваш телефон"
-                value="8 (960) 900-60-90" required>
-            </div>
-          </div>
-
-
         </div>
+
+        <div class="form__owner-data owner-data">
+          <h3 class="owner-data__title">Контактные данные (владельца кота)</h3>
+          <div class="owner-data__wrapper">
+            <label class="owner-data__label" for="E-mail">E-mail:*</label>
+            <input class="owner-data__input" id="E-mail" type="email" name="E-mail" placeholder="Укажите ваш e-mail"
+              value="kuklachev@gmail.com" required>
+            <label class="owner-data__label" for="phone">Телефон:*</label>
+            <input class="owner-data__input" id="phone" type="tel" name="phone" placeholder="Укажите ваш телефон"
+              value="8 (960) 900-60-90" required>
+          </div>
+        </div>
+
+        <div class="form__comment comment">
+          <h3 class="comment__title">Комментарий</h3>
+          <label class="comment__label" for="comment">
+            <input class="comment_input" id="comment" type="text" name="comment"
+              placeholder="Расскажите обо всех повадках кота">
+          </label>
+        </div>
+
+        <fieldset class="form__extra extra">
+          <legend class="extra__title">Дополнительно</legend>
+          <ul class="extra__list">
+            <li class="extra__item">
+              <label class="extra__control control">
+                <input class="control__input visually-hidden" type="checkbox" name="sweetener" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Cахарозаменитель</span>
+              </label>
+            </li>
+            <li class="extra__item">
+              <label class="extra__control control">
+                <input class="control__input visually-hidden" type="checkbox" name="water">
+                <span class="control__mark"></span>
+                <span class="control__label">Питьевая вода</span>
+              </label>
+            </li>
+            <li class="extra__item">
+              <label class="extra__control control">
+                <input class="control__input visually-hidden" type="checkbox" name="milk">
+                <span class="control__mark"></span>
+                <span class="control__label">Молоко</span>
+              </label>
+            </li>
+            <li class="extra__item">
+              <label class="extra__control control">
+                <input class="control__input visually-hidden" type="checkbox" name="vitamins">
+                <span class="control__mark"></span>
+                <span class="control__label">Витамины</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <div class="form__submit submit">
+          <button class="submit__button button" type="submit">Отправить заявку</button>
+          <small class="submit__legend">
+            * — Обязательные поля
+          </small>
+        </div>
+
       </form>
+
     </section>
 
     <footer class="main-footer">
