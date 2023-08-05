@@ -18,7 +18,7 @@
         <span class="visually-hidden">Открыть меню.</span>
       </button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
+        <li class="site-list__item">
           <a href="index.html">
             Главная
           </a>
@@ -28,7 +28,7 @@
             Каталог продукции
           </a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--active">
           <a href="#">
             Подбор программы
           </a>
@@ -40,23 +40,24 @@
   <main class="form-container">
 
     <section class="appointment">
-      <h2 class="appointment__title">Подбор программы</h2>
-      <p class="appointment__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
+      <h1 class="appointment__title">Подбор программы</h1>
+      <p class="appointment__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="appointment__form form" action="https://echo.htmlacademy.ru/" method="post">
 
         <div class="form__cat-data cat-data">
-          <div class="cat-data__wrapper">
-            <label class="cat-data__label" for="cat-name">Имя:*</label>
-            <input class="cat-data__input" id="cat-name" type="text" name="cat-name" placeholder="Укажите имя питомца"
+          <fieldset class="cat-data__cat-info cat-info">
+            <legend class="visually-hidden">Информация о питомце.</legend>
+            <label class="cat-info__label" for="cat-name">Имя:*</label>
+            <input class="cat-info__input" id="cat-name" type="text" name="cat-name" placeholder="Укажите имя питомца"
               value="Барсик" required>
-            <label class="cat-data__label" for="cat-weight">Вес (кг):*</label>
-            <input class="cat-data__input" id="cat-weight" type="number" name="cat-weight"
+            <label class="cat-info__label" for="cat-weight">Вес (кг):*</label>
+            <input class="cat-info__input" id="cat-weight" type="number" name="cat-weight"
               placeholder="Укажите вес питомца" value="7" required>
-            <label class="cat-data__label" for="cat-age">Возраст (лет):</label>
-            <input class="cat-data__input" id="cat-age" type="number" name="cat-age"
+            <label class="cat-info__label" for="cat-age">Возраст (лет):</label>
+            <input class="cat-info__input" id="cat-age" type="number" name="cat-age"
               placeholder="Укажите возраст питомца" value="7">
-          </div>
+          </fieldset>
           <fieldset class="cat-data__strategy strategy">
             <legend class="visually-hidden">Выбор стратегии питания.</legend>
             <ul class="strategy__list">
@@ -67,14 +68,14 @@
                   <span class="control__label">Похудение</span>
                 </label>
               </li>
-              <li class="catalog-item">
+              <li class="strategy__item">
                 <label class="strategy__control control">
                   <input class="control__input visually-hidden" type="radio" name="strategy-plan" value="gain">
                   <span class="control__radio"></span>
                   <span class="control__label">Набор массы</span>
                 </label>
               </li>
-              <li class="catalog-item">
+              <li class="strategy__item">
                 <label class="strategy__control control">
                   <input class="control__input visually-hidden" type="radio" name="strategy-plan" value="none">
                   <span class="control__radio"></span>
@@ -85,8 +86,8 @@
           </fieldset>
         </div>
 
-        <div class="form__owner-data owner-data">
-          <h3 class="owner-data__title">Контактные данные (владельца кота)</h3>
+        <fieldset class="form__owner-data owner-data">
+          <legend class="owner-data__title">Контактные данные (владельца кота)</legend>
           <div class="owner-data__wrapper">
             <label class="owner-data__label" for="E-mail">E-mail:*</label>
             <input class="owner-data__input" id="E-mail" type="email" name="E-mail" placeholder="Укажите ваш e-mail"
@@ -95,15 +96,14 @@
             <input class="owner-data__input" id="phone" type="tel" name="phone" placeholder="Укажите ваш телефон"
               value="8 (960) 900-60-90" required>
           </div>
-        </div>
+        </fieldset>
 
-        <div class="form__comment comment">
-          <h3 class="comment__title">Комментарий</h3>
-          <label class="comment__label" for="comment">
-            <input class="comment_input" id="comment" type="text" name="comment"
-              placeholder="Расскажите обо всех повадках кота">
-          </label>
-        </div>
+        <fieldset class="form__comment comment">
+          <legend class="comment__title">Комментарий</legend>
+          <label class="comment__label" for="comment"></label>
+          <textarea class="comment_input" name="comment" id="comment" cols="100" rows="5"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
 
         <fieldset class="form__extra extra">
           <legend class="extra__title">Дополнительно</legend>
@@ -169,6 +169,7 @@
             <ul class="contacts-item__list social">
               <li class="social__item">
                 <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                  <svg></svg>
                   <span class="visually-hidden">
                     Мы во Вконтакте.
                   </span>
@@ -176,6 +177,7 @@
               </li>
               <li class="social__item">
                 <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                  <svg></svg>
                   <span class="visually-hidden">
                     Мы в Телеграм.
                   </span>
@@ -183,6 +185,7 @@
               </li>
               <li class="social__item">
                 <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <svg></svg>
                   <span class="visually-hidden">
                     Мы в YouTube.
                   </span>
@@ -192,6 +195,7 @@
           </li>
           <li class="contacts__item">
             <a class="contacts__academy-link" href="htmlacademy.ru">
+              <svg></svg>
               <span class="visually-hidden">
                 HTML Академия.
               </span>
