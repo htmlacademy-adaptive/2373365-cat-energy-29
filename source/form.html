@@ -8,149 +8,165 @@
 </head>
 
 <body class="page__body">
+  <div class="page__container">
 
-  <header class="main-header">
-    <a href="#" class="main-header__logo logo">
-      <img class="logo__icon logo__icon--primary" src="img/logo-mobile.svg" width="33" height="38"
-        alt="Логотип «Кэт энерджи».">
-      <img class="logo__title" src="img/logo-title.svg" width="101" height="18" alt="Заголовок «Кэт энерджи».">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--open" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
-      </button>
-      <ul class="main-nav__list site-list site-list--close ">
-        <li class="site-list__item">
-          <a class="site-list__link" href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link" href="#">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <header class="main-header">
+      <a href="#" class="main-header__logo logo">
+        <img class="logo__icon logo__icon--primary" src="img/logo-mobile.svg" width="33" height="38"
+          alt="Логотип «Кэт энерджи».">
+        <img class="logo__title" src="img/logo-title.svg" width="101" height="18" alt="Заголовок «Кэт энерджи».">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle main-nav__toggle--open" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <ul class="main-nav__list site-list site-list--close ">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="#">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <main class="form-container">
+    <main class="main-container">
 
-    <section class="appointment">
+      <section class="appointment">
 
-      <h1 class="appointment__title">Подбор программы</h1>
-      <p class="appointment__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <form class="appointment__form form" action="https://echo.htmlacademy.ru/" method="post">
-        <h2 class="visually-hidden">Форма подбора программы</h2>
-        <div class="form__cat-data cat-data">
-          <fieldset class="cat-data__cat-info cat-info">
-            <legend class="visually-hidden">Информация о питомце.</legend>
-            <label class="cat-info__label" for="cat-name">Имя:*</label>
-            <input class="cat-info__input" id="cat-name" type="text" name="cat-name" placeholder="Укажите имя питомца"
-              value="Барсик" required>
-            <label class="cat-info__label" for="cat-weight">Вес (кг):*</label>
-            <input class="cat-info__input" id="cat-weight" type="number" name="cat-weight"
-              placeholder="Укажите вес питомца" value="7" required>
-            <label class="cat-info__label" for="cat-age">Возраст (лет):</label>
-            <input class="cat-info__input" id="cat-age" type="number" name="cat-age"
-              placeholder="Укажите возраст питомца" value="7">
+        <div class="appointment__header">
+          <h1 class="appointment__title">Подбор программы</h1>
+          <p class="appointment__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        </div>
+
+        <form class="appointment__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="visually-hidden">Форма подбора программы</h2>
+          <div class="form__cat-data cat-data">
+            <fieldset class="cat-data__cat-info cat-info">
+              <legend class="visually-hidden">Информация о питомце.</legend>
+              <div class="cat-info__wrapper">
+                <label class="cat-info__label" for="cat-name">Имя:*</label>
+                <input class="cat-info__input" id="cat-name" type="text" name="cat-name"
+                  placeholder="Укажите имя питомца" value="Барсик" required>
+              </div>
+              <div class="cat-info__wrapper">
+                <label class="cat-info__label" for="cat-weight">Вес (кг):*</label>
+                <input class="cat-info__input" id="cat-weight" type="number" name="cat-weight"
+                  placeholder="Укажите вес питомца" value="7" required>
+              </div>
+              <div class="cat-info__wrapper">
+                <label class="cat-info__label" for="cat-age">Возраст (лет):</label>
+                <input class="cat-info__input" id="cat-age" type="number" name="cat-age"
+                  placeholder="Укажите возраст питомца" value="7">
+              </div>
+            </fieldset>
+            <fieldset class="cat-data__strategy strategy">
+              <legend class="visually-hidden">Выбор стратегии питания.</legend>
+              <ul class="strategy__list">
+                <li class="strategy__item">
+                  <label class="strategy__control control">
+                    <input class="control__input visually-hidden" type="radio" name="strategy-plan" value="fit" checked>
+                    <span class="control__radio"></span>
+                    <span class="control__label">Похудение</span>
+                  </label>
+                </li>
+                <li class="strategy__item">
+                  <label class="strategy__control control">
+                    <input class="control__input visually-hidden" type="radio" name="strategy-plan" value="gain">
+                    <span class="control__radio"></span>
+                    <span class="control__label">Набор массы</span>
+                  </label>
+                </li>
+                <li class="strategy__item">
+                  <label class="strategy__control control">
+                    <input class="control__input visually-hidden" type="radio" name="strategy-plan" value="none">
+                    <span class="control__radio"></span>
+                    <span class="control__label">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <fieldset class="form__owner-data owner-data">
+            <legend class="owner-data__title">Контактные данные (владельца кота)</legend>
+            <div class="owner-data__comtainer">
+              <div class="owner-data__wrapper">
+                <label class="owner-data__label" for="E-mail">E-mail:*</label>
+                <input class="owner-data__input" id="E-mail" type="email" name="E-mail" placeholder="Укажите ваш e-mail"
+                  value="kuklachev@gmail.com" required>
+              </div>
+              <div class="owner-data__wrapper">
+                <label class="owner-data__label" for="phone">Телефон:*</label>
+                <input class="owner-data__input" id="phone" type="tel" name="phone" placeholder="Укажите ваш телефон"
+                  value="8 (960) 900-60-90" required>
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="cat-data__strategy strategy">
-            <legend class="visually-hidden">Выбор стратегии питания.</legend>
-            <ul class="strategy__list">
-              <li class="strategy__item">
-                <label class="strategy__control control">
-                  <input class="control__input visually-hidden" type="radio" name="strategy-plan" value="fit" checked>
-                  <span class="control__radio"></span>
-                  <span class="control__label">Похудение</span>
+
+          <fieldset class="form__comment comment">
+            <legend class="comment__title">Комментарий</legend>
+            <label class="comment__label" for="comment"></label>
+            <textarea class="comment_input" name="comment" id="comment"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+
+          <fieldset class="form__extra extra">
+            <legend class="extra__title">Дополнительно</legend>
+            <ul class="extra__list">
+              <li class="extra__item">
+                <label class="extra__control control">
+                  <input class="control__input visually-hidden" type="checkbox" name="sweetener" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Cахарозаменитель</span>
                 </label>
               </li>
-              <li class="strategy__item">
-                <label class="strategy__control control">
-                  <input class="control__input visually-hidden" type="radio" name="strategy-plan" value="gain">
-                  <span class="control__radio"></span>
-                  <span class="control__label">Набор массы</span>
+              <li class="extra__item">
+                <label class="extra__control control">
+                  <input class="control__input visually-hidden" type="checkbox" name="water">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Питьевая вода</span>
                 </label>
               </li>
-              <li class="strategy__item">
-                <label class="strategy__control control">
-                  <input class="control__input visually-hidden" type="radio" name="strategy-plan" value="none">
-                  <span class="control__radio"></span>
-                  <span class="control__label">Не знаю (Нужен ваш совет)</span>
+              <li class="extra__item">
+                <label class="extra__control control">
+                  <input class="control__input visually-hidden" type="checkbox" name="milk">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Молоко</span>
+                </label>
+              </li>
+              <li class="extra__item">
+                <label class="extra__control control">
+                  <input class="control__input visually-hidden" type="checkbox" name="vitamins">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Витамины</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-        </div>
 
-        <fieldset class="form__owner-data owner-data">
-          <legend class="owner-data__title">Контактные данные (владельца кота)</legend>
-          <div class="owner-data__wrapper">
-            <label class="owner-data__label" for="E-mail">E-mail:*</label>
-            <input class="owner-data__input" id="E-mail" type="email" name="E-mail" placeholder="Укажите ваш e-mail"
-              value="kuklachev@gmail.com" required>
-            <label class="owner-data__label" for="phone">Телефон:*</label>
-            <input class="owner-data__input" id="phone" type="tel" name="phone" placeholder="Укажите ваш телефон"
-              value="8 (960) 900-60-90" required>
+          <div class="form__submit submit">
+            <button class="submit__button button" type="submit">Отправить заявку</button>
+            <small class="submit__legend">
+              * — Обязательные поля
+            </small>
           </div>
-        </fieldset>
 
-        <fieldset class="form__comment comment">
-          <legend class="comment__title">Комментарий</legend>
-          <label class="comment__label" for="comment"></label>
-          <textarea class="comment_input" name="comment" id="comment" cols="100" rows="5"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
+        </form>
 
-        <fieldset class="form__extra extra">
-          <legend class="extra__title">Дополнительно</legend>
-          <ul class="extra__list">
-            <li class="extra__item">
-              <label class="extra__control control">
-                <input class="control__input visually-hidden" type="checkbox" name="sweetener" checked>
-                <span class="control__mark"></span>
-                <span class="control__label">Cахарозаменитель</span>
-              </label>
-            </li>
-            <li class="extra__item">
-              <label class="extra__control control">
-                <input class="control__input visually-hidden" type="checkbox" name="water">
-                <span class="control__mark"></span>
-                <span class="control__label">Питьевая вода</span>
-              </label>
-            </li>
-            <li class="extra__item">
-              <label class="extra__control control">
-                <input class="control__input visually-hidden" type="checkbox" name="milk">
-                <span class="control__mark"></span>
-                <span class="control__label">Молоко</span>
-              </label>
-            </li>
-            <li class="extra__item">
-              <label class="extra__control control">
-                <input class="control__input visually-hidden" type="checkbox" name="vitamins">
-                <span class="control__mark"></span>
-                <span class="control__label">Витамины</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+      </section>
 
-        <div class="form__submit submit">
-          <button class="submit__button button" type="submit">Отправить заявку</button>
-          <small class="submit__legend">
-            * — Обязательные поля
-          </small>
-        </div>
-
-      </form>
-
-    </section>
+    </main>
 
     <footer class="main-footer">
       <div class="main-footer__adress adress">
@@ -160,16 +176,16 @@
         </div>
         <div class="adress__map">
           <div style="position: relative;
-          overflow: hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+        overflow: hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
               style="color: #eeeeee;
-          font-size: 12px;
-          position: absolute;
-          top: 0 px;">Санкт‑Петербург</a><a
+        font-size: 12px;
+        position: absolute;
+        top: 0 px;">Санкт‑Петербург</a><a
               href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSUYAQFtjfXVyeXpgZQ==/?ll=30.323036%2C59.938631&utm_medium=mapframe&utm_source=maps&z=16.63"
               style="color: #eeeeee;
-          font-size: 12px;
-          position: absolute;
-          top: 14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe
+        font-size: 12px;
+        position: absolute;
+        top: 14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe
               src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.63"
               width="320" height="362" frameborder="1" allowfullscreen="true" style="position: relative;"></iframe>
           </div>
@@ -248,7 +264,8 @@
         </ul>
       </div>
     </footer>
-  </main>
+
+  </div>
 </body>
 
 </html>

@@ -11,7 +11,6 @@
 @import "./blocks/index/features.less";
 @import "./blocks/index/review.less";
 @import "./blocks/form/appointment.less";
-@import "./blocks/form/cat-data.less";
 @import "./blocks/form/cat-info.less";
 @import "./blocks/form/owner-data.less";
 @import "./blocks/form/control.less";
@@ -64,13 +63,27 @@ html {
 }
 
 body {
+  display: flex;
+  min-height: 100%;
+  min-width: 400px;
   margin: 0;
   font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  color: #000000;
-  background-color: #ffffff;
-  width: 320px;
+  color: #444444;
+  background-color: #e5e5e5;
   box-sizing: border-box;
+}
+
+.page__container {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.main-container {
+  flex-grow: 1;
 }
