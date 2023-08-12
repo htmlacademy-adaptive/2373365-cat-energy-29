@@ -20,19 +20,19 @@
         <button class="main-nav__toggle main-nav__toggle--open" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
-        <ul class="main-nav__list site-list site-list--close">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="#">
+        <ul class="main-nav__list main-nav__list--close">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="#">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -96,24 +96,25 @@
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
           часов
           в день.</p>
-        <div class="review__stats stats">
-          <dl class="stats__list">
-            <div class="stats__item">
-              <dt class="stats__number">5 кг</dt>
-              <dd class="stats__description">Снижение веса</dd>
+        <div class="review__stats">
+          <dl class="review__list">
+            <div class="review__item">
+              <dt class="review__number">5 кг</dt>
+              <dd class="review__description">Снижение веса</dd>
             </div>
-            <div class="stats__item">
-              <dt class="stats__number">60 дней</dt>
-              <dd class="stats__description">Затрачено времени</dd>
+            <div class="review__item">
+              <dt class="review__number">60 дней</dt>
+              <dd class="review__description">Затрачено времени</dd>
             </div>
           </dl>
-          <div class="stats__summ">
-            <p class="stats__title">Затраты на питание:</p>
-            <span class="stats__text">15 000 РУБ.</span>
+          <div class="review__summ">
+            <p class="review__subtitle">Затраты на питание:</p>
+            <span class="review__price">15 000 РУБ.</span>
           </div>
         </div>
         <div class="review__slider slider">
           <img class="slider__image" src="img/cat-boris-before.png" width="280" height="256" alt="Фото кота Бориса до.">
+          <span class="slider__divider"></span>
           <img class="slider__image" src="img/cat-boris-after.png" width="280" height="256"
             alt="Фото кота Бориса после.">
         </div>
@@ -125,11 +126,11 @@
     <footer class="main-footer">
       <div class="main-footer__adress adress">
         <div class="adress__wrapper">
-          <h2 class="adress__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="adress__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
           <p class="adress__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <div class="adress__map">
-          <div style="position: relative;
+          <div class="adress__map-widget" style="position: relative;
         overflow: hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
               style="color: #eeeeee;
         font-size: 12px;
@@ -148,7 +149,7 @@
       <div class="main-footer__contacts contacts">
         <ul class="contacts__list">
           <li class="contacts__item">
-            <a href="#" class="contacts-logo logo">
+            <a href="#" class="contacts__logo logo">
               <img class="logo__title" src="img/logo-title.svg" width="128" height="24" alt="Заголовок «Кэт энерджи».">
             </a>
           </li>

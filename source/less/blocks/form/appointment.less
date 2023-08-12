@@ -1,28 +1,40 @@
 .appointment {
-  background-color: #ffffff;
-}
+  background-color: @white;
 
-.appointment__header {
-  border-top: 1px solid #d9d9d9;
-  padding: 27px 20px 39px 20px;
-}
+  &__header {
+    border-top: 1px solid @light_grey_4;
+    padding: 27px 20px 39px 20px;
+  }
 
-.appointment__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  line-height: 36px;
-  color: #000000;
-  font-weight: 400;
-  margin: 0;
-  margin-bottom: 37px;
-}
+  &__title {
+    font-family: @font_Oswald;
+    font-size: 36px;
+    line-height: 36px;
+    color: @black;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 37px;
+  }
 
-.appointment__text {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-  font-weight: 400;
-  margin: 0;
-  text-transform: uppercase;
+  &__subtitle {
+    font-family: @font_Oswald;
+    font-size: 24px;
+    line-height: 26px;
+    color: @black;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+    display: block;
+  }
+
+  &__text {
+    font-family: @font_Oswald;
+    font-size: 14px;
+    line-height: 18px;
+    color: @black;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+  }
 }

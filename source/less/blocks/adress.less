@@ -1,33 +1,52 @@
 .adress {
-  background-color: #f2f2f2;
-}
+  background-color: @light_grey;
 
-.adress__wrapper {
-  padding: 26px 20px;
-  display: flex;
-}
+  &__wrapper {
+    padding: 26px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-.adress__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #111111;
-  font-weight: 400;
-  margin: 0;
-  text-transform: uppercase;
-}
+  &__title {
+    font-family: @font_Oswald;
+    font-size: 16px;
+    line-height: 20px;
+    color: @dark_grey_4;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+  }
 
-.adress__text {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: #444444;
-  font-weight: 400;
-  margin: 0;
-}
+  &__text {
+    font-family: @font_Lato;
+    font-size: 14px;
+    line-height: 20px;
+    color: @dark_grey_2;
+    font-weight: 400;
+    margin: 0;
+  }
 
-.adress__map {
-  display: block;
-  max-width: 320px;
-  max-height: 362px;
+  &__map {
+    display: block;
+    width: 320px;
+    height: 362px;
+    background-image: url("../../img/map-back.jpg");
+    background-position: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 57px;
+      height: 53px;
+      background-image: url("../../img/map-pin.png");
+      top: 139px;
+      left: 134px;
+    }
+  }
+
+  &__map-widget {
+    z-index: 2;
+  }
 }
