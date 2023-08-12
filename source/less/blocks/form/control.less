@@ -1,0 +1,61 @@
+.control {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+.control__mark,
+.control__radio {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control__radio {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control__radio::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #68b738;
+  margin: auto;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::before {
+  content: "";
+  width: 18px;
+  height: 14px;
+  background-image: url("../../../img/icon-checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.control__label {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+  margin-left: 45px;
+}
+
+.count__input::-webkit-outer-spin-button,
+.count__input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
