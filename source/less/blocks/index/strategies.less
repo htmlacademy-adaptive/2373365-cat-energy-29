@@ -2,6 +2,17 @@
   list-style: none;
   margin: 0;
   padding: 20px;
+
+  @media (min-width: @tablet_width) {
+    padding: 0 30px 45px 30px;
+  }
+
+  @media (min-width: @desktop_width) {
+    padding: 82px 110px 71px 110px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
 }
 
 .strategies__item {
@@ -49,6 +60,74 @@
     background-size: 67px 28px;
     background-repeat: no-repeat;
   }
+
+  @media (min-width: @tablet_width) {
+    padding: 77px 63px 53px 52px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      left: auto;
+      top: 92px;
+      right: 63px;
+    }
+
+    &:nth-child(1)::after {
+      width: 140px;
+      height: 194px;
+      top: 81px;
+      right: 93px;
+      left: auto;
+      background-size: 140px 194px;
+    }
+
+    &:nth-child(2)::after {
+      width: 268px;
+      height: 112px;
+      left: auto;
+      top: 135px;
+      right: 29px;
+      background-size: 268px 112px;
+    }
+  }
+
+  @media (min-width: @desktop_width) {
+    padding: 77px 52px 55px 52px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      left: 52px;
+      top: 47px;
+      right: auto;
+    }
+
+    &:nth-child(1)::after {
+      width: 70px;
+      height: 97px;
+      top: 41px;
+      right: auto;
+      left: 67px;
+      background-size: 70px 97px;
+    }
+
+    &:nth-child(2)::after {
+      width: 134px;
+      height: 56px;
+      top: 67px;
+      right: auto;
+      left: 33px;
+      background-size: 134px 56px;
+    }
+  }
 }
 
 .strategies__title {
@@ -61,6 +140,18 @@
   margin-left: 70px;
   margin-bottom: 29px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet_width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop_width) {
+    margin-bottom: 73px;
+    margin-left: 162px;
+  }
 }
 
 .strategies__text {
@@ -68,6 +159,20 @@
   margin: 0;
   padding-bottom: 23px;
   border-bottom: 1px solid @light_grey_4;
+
+  @media (min-width: @tablet_width) {
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 48px;
+    max-width: 340px;
+    border: none;
+  }
+
+  @media (min-width: @desktop_width) {
+    margin-bottom: 23px;
+    max-width: 100%;
+  }
 }
 
 .strategies__link {
@@ -96,5 +201,12 @@
     background-position: center;
     background-size: 24px 12px;
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: @tablet_width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    width: 168px;
   }
 }
