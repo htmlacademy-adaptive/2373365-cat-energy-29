@@ -1,6 +1,11 @@
 .slider {
   position: relative;
   min-height: 256px;
+
+  @media (min-width: @tablet_width) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .slider__image {
@@ -8,6 +13,11 @@
   position: absolute;
   top: 0;
   left: 0;
+
+  @media (min-width: @tablet_width) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .slider__divider {

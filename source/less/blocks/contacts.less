@@ -4,6 +4,17 @@
   margin: 0;
   text-align: center;
   background-color: @light_grey;
+
+  @media (min-width: @tablet_width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 30px;
+  }
+
+  @media (min-width: @desktop_width) {
+    padding: 66px 110px;
+  }
 }
 
 .contacts__item {
@@ -13,6 +24,15 @@
   &:not(:last-child) {
     border-bottom: 1px solid @light_grey_4;
   }
+
+  @media (min-width: @tablet_width) {
+    min-width: 168px;
+    padding: 0;
+
+    &:not(:last-child) {
+      border: none;
+    }
+  }
 }
 
 .contacts__logo {
@@ -20,6 +40,10 @@
   display: block;
   width: 128px;
   height: 24px;
+
+  @media (min-width: @tablet_width) {
+    margin-left: 0;
+  }
 }
 
 .contacts__academy-link {
@@ -29,6 +53,10 @@
   align-items: center;
   width: 280px;
   height: 34px;
+
+  @media (min-width: @tablet_width) {
+    width: 168px;
+  }
 }
 
 .contacts__subtitle {
