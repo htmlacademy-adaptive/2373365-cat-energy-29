@@ -1,83 +1,82 @@
 .features {
-  box-sizing: border-box;
   padding: 0 20px 49px 20px;
+}
 
-  &__title {
-    font-family: @font_Oswald;
-    font-size: 36px;
-    line-height: 40px;
-    color: @black;
-    font-weight: 400;
-    margin: 0;
-    margin-bottom: 40px;
+.features__title {
+  font-family: @font_Oswald;
+  font-size: 36px;
+  line-height: 40px;
+  color: @black;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.features__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features__text {
+  font-family: @font_Lato;
+  font-size: 14px;
+  line-height: 18px;
+  color: @dark_grey_2;
+  font-weight: 400;
+  margin: 0;
+  margin-left: 80px;
+}
+
+.features__item {
+  position: relative;
+  min-height: 60px;
+
+  &:not(:last-child) {
+    margin-bottom: 22px;
   }
 
-  &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
   }
 
-  &__text {
-    font-family: @font_Lato;
-    font-size: 14px;
-    line-height: 18px;
-    color: @dark_grey_2;
-    font-weight: 400;
-    margin: 0;
-    margin-left: 80px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: @green;
   }
 
-  &__item {
-    position: relative;
-    min-height: 60px;
-
-    &:not(:last-child) {
-      margin-bottom: 22px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      top: 0;
-      left: 0;
-      background-repeat: no-repeat;
-      background-position: center;
-      z-index: 2;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      top: 0;
-      left: 0;
-      background-color: @green;
-    }
-  }
-
-  &__item--healthy {
+  &--healthy {
     &::before {
       background-image: url("../../../img/icon-leaf.svg");
     }
   }
 
-  &__item--handy {
+  &--handy {
     &::before {
       background-image: url("../../../img/icon-bulb.svg");
     }
   }
 
-  &__item--simple {
+  &--simple {
     &::before {
       background-image: url("../../../img/icon-fork.svg");
     }
   }
 
-  &__item--fast {
+  &--fast {
     &::before {
       background-image: url("../../../img/icon-alarm.svg");
     }

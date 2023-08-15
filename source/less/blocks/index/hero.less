@@ -2,8 +2,6 @@
   padding: 27px 20px 0 20px;
   position: relative;
   text-align: center;
-  width: 320px;
-  box-sizing: border-box;
   z-index: 1;
 
   &::before {
@@ -31,41 +29,39 @@
     opacity: 0.15;
     z-index: -1;
   }
+}
 
+.hero__title {
+  font-family: @font_Oswald;
+  font-size: 36px;
+  line-height: 36px;
+  color: @white;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 25px;
+}
 
-  &__title {
-    font-family: @font_Oswald;
-    font-size: 36px;
-    line-height: 36px;
-    color: @white;
-    font-weight: 400;
-    margin: 0;
-    margin-bottom: 25px;
-  }
+.hero__text {
+  font-family: @font_Oswald;
+  font-size: 14px;
+  line-height: 14px;
+  color: @white;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+}
 
-  &__text {
-    font-family: @font_Oswald;
-    font-size: 14px;
-    line-height: 14px;
-    color: @white;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 29px;
-  }
-
-  &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 7px 44px;
-    font-family: @font_Oswald;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-    box-sizing: border-box;
-    min-width: 280px;
-    min-height: 40px;
-  }
+.hero__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 44px;
+  font-family: @font_Oswald;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  min-width: 280px;
+  min-height: 40px;
 }

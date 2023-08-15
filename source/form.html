@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -21,18 +22,18 @@
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <ul class="main-nav__list main-nav__list--close ">
-          <li class="main-list__item">
-            <a class="main-list__link" href="index.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="main-list__item">
-            <a class="main-list__link" href="catalog.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="main-list__item main-list__item--active">
-            <a class="main-list__link" href="#">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="#">
               Подбор программы
             </a>
           </li>
@@ -97,13 +98,13 @@
 
           <fieldset class="form__fieldset owner-data">
             <legend class="owner-data__title appointment__subtitle">Контактные данные (владельца кота)</legend>
-            <div class="owner-data__comtainer">
-              <div class="owner-data__wrapper">
+            <div class="owner-data__container">
+              <div class="owner-data__wrapper  owner-data__wrapper--email">
                 <label class="owner-data__label" for="E-mail">E-mail:*</label>
                 <input class="owner-data__input" id="E-mail" type="email" name="E-mail"
                   placeholder="kuklachev@gmail.com" required>
               </div>
-              <div class="owner-data__wrapper">
+              <div class="owner-data__wrapper  owner-data__wrapper--phone">
                 <label class="owner-data__label" for="phone">Телефон:*</label>
                 <input class="owner-data__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90"
                   required>
@@ -261,7 +262,7 @@
         </ul>
       </div>
     </footer>
-
+    <script src="js/app.js"></script>
   </div>
 </body>
 
