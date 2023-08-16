@@ -53,6 +53,21 @@
       left: 77px;
     }
   }
+
+  @media (min-width: @desktop_width) {
+    width: 245px;
+    height: 288px;
+    margin: 0;
+
+    &::after {
+      height: 288px;
+    }
+
+    &::before {
+      top: 56px;
+      left: 83px;
+    }
+  }
 }
 
 .gift__text {
@@ -72,5 +87,11 @@
     margin-top: 71px;
     margin-right: 125px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop_width) {
+    margin: auto;
+    margin-top: 185px;
+    text-align: center;
   }
 }
