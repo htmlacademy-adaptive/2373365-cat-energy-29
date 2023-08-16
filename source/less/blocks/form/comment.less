@@ -2,6 +2,14 @@
   margin: 0;
   border: none;
   padding: 0 20px 23px 20px;
+
+  @media (min-width: @tablet_width) {
+    padding: 0 70px 65px 70px;
+  }
+
+  @media (min-width: @desktop_width) {
+    padding: 0 110px 70px 110px;
+  }
 }
 
 .comment__title {
@@ -10,10 +18,30 @@
   &::after {
     width: 159px;
   }
+
+  @media (min-width: @tablet_width) {
+    margin-bottom: 87px;
+
+    &::after {
+      width: 476px;
+    }
+  }
+
+  @media (min-width: @desktop_width) {
+    margin-bottom: 78px;
+
+    &::after {
+      width: 1108px;
+    }
+
+    &::before {
+      width: 70px;
+    }
+  }
 }
 
 .comment__input {
-  min-width: 280px;
+  width: 280px;
   min-height: 150px;
   font-family: @font_Oswald;
   font-size: 16px;
@@ -23,4 +51,17 @@
   text-transform: uppercase;
   padding: 14px;
   border: 1px solid @light_grey_6;
+
+  @media (min-width: @tablet_width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 628px;
+    min-height: 175px;
+    padding: 11px 20px;
+  }
+
+  @media (min-width: @desktop_width) {
+    width: 1220px;
+    min-height: 175px;
+  }
 }

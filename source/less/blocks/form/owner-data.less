@@ -2,6 +2,14 @@
   margin: 0;
   border: none;
   padding: 0 20px 24px 20px;
+
+  @media (min-width: @tablet_width) {
+    padding: 0 70px 65px 70px;
+  }
+
+  @media (min-width: @desktop_width) {
+    padding: 0 110px 70px 110px;
+  }
 }
 
 .owner-data__title {
@@ -10,12 +18,40 @@
   &::after {
     width: 93px;
   }
+
+  @media (min-width: @tablet_width) {
+    margin-bottom: 76px;
+
+    &::after {
+      width: 146px;
+    }
+  }
+
+  @media (min-width: @desktop_width) {
+    &::after {
+      width: 778px;
+    }
+
+    &::before {
+      width: 70px;
+    }
+  }
 }
 
 .owner-data__container {
   display: flex;
   flex-direction: column;
   gap: 14px;
+
+  @media (min-width: @tablet_width) {
+    gap: 20px;
+  }
+
+  @media (min-width: @desktop_width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
 }
 
 .owner-data__wrapper {
@@ -48,6 +84,10 @@
       background-image: url("../../../img/icon-phone.svg");
     }
   }
+
+  @media (min-width: @tablet_width) {
+    height: 52px;
+  }
 }
 
 .owner-data__label {
@@ -60,6 +100,11 @@
   color: @dark_grey_2;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: @tablet_width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .owner-data__input {
@@ -72,4 +117,9 @@
   color: @dark_grey_2;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: @tablet_width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -17,6 +17,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: @tablet_width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .control__radio {
@@ -30,6 +35,11 @@
   border-radius: 50%;
   background-color: @green;
   margin: auto;
+
+  @media (min-width: @tablet_width) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .control__input[type="checkbox"]:checked + .control__mark::before {
@@ -40,6 +50,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-width: @tablet_width) {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .control__label {
@@ -51,6 +66,12 @@
   margin: 0;
   text-transform: uppercase;
   margin-left: 45px;
+
+  @media (min-width: @tablet_width) {
+    margin-left: 60px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .control__input::-webkit-outer-spin-button,

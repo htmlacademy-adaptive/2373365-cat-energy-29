@@ -7,13 +7,27 @@
   border: none;
   border-bottom: 1px solid @light_grey_4;
   padding: 0 20px 20px 24px;
+
+  @media (min-width: @tablet_width) {
+    padding: 0 70px 72px 70px;
+    border: none;
+    gap: 20px;
+  }
+
+  @media (min-width: @desktop_width) {
+    padding: 0;
+  }
 }
 
 .cat-info__wrapper {
   display: flex;
-  gap: 13px;
+  gap: 14px;
   height: 45px;
   justify-content: space-between;
+
+  @media (min-width: @tablet_width) {
+    height: 52px;
+  }
 }
 
 .cat-info__label {
@@ -26,6 +40,11 @@
   color: @dark_grey_2;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: @tablet_width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .cat-info__input {
@@ -38,4 +57,11 @@
   color: @dark_grey_2;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: @tablet_width) {
+    height: 52px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 11px 20px;
+  }
 }
