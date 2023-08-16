@@ -27,6 +27,11 @@
     top: 25px;
     transform: translateX(-50%);
   }
+
+  @media (min-width: @tablet_width) {
+    padding: 50px 37px 40px 37px;
+    border: 1px solid @light_grey;
+  }
 }
 
 .more-card__title {
@@ -38,6 +43,15 @@
   margin-top: 53px;
   margin-bottom: 8px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet_width) {
+    margin: auto;
+    margin-top: 110px;
+    margin-bottom: 23px;
+    width: 170px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .more-card__text {
@@ -48,6 +62,14 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 21px;
+
+  @media (min-width: @tablet_width) {
+    margin: auto;
+    margin-bottom: 82px;
+    width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .more-card__link {
@@ -64,4 +86,9 @@
   text-transform: uppercase;
   background-color: @light_grey;
   text-decoration: none;
+
+  @media (min-width: @tablet_width) {
+    width: 250px;
+    height: 40px;
+  }
 }

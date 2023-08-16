@@ -2,6 +2,16 @@
   padding: 27px 20px 41px 20px;
   border-top: 1px solid @light_grey_4;
   border-bottom: 1px solid @light_grey_4;
+
+  @media (min-width: @tablet_width) {
+    padding: 65px 30px 84px 30px;
+    border: none;
+  }
+
+  @media (min-width: @desktop_width) {
+    padding: 74px 110px 84px 110px;
+    border: none;
+  }
 }
 
 .catalog-wrapper__title {
@@ -11,4 +21,10 @@
   color: @black;
   font-weight: 400;
   margin: 0;
+
+  @media (min-width: @tablet_width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 100px;
+  }
 }

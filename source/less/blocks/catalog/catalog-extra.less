@@ -1,7 +1,7 @@
 .catalog-extra {
-  display: flex;
-  flex-direction: column;
-  padding: 25px 20px 35px 20px;
+  @media (min-width: @tablet_width) {
+    padding: 0 30px 70px 30px;
+  }
 }
 
 .catalog-extra__title {
@@ -11,10 +11,24 @@
   color: @black;
   font-weight: 400;
   margin-bottom: 36px;
+  margin-left: 20px;
+
+  @media (min-width: @tablet_width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    margin-left: 70px;
+  }
 }
 
 .catalog-extra__list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
+
+  @media (min-width: @tablet_width) {
+    border: 1px solid @light_grey;
+    padding: 0;
+  }
 }

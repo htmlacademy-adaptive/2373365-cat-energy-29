@@ -1,10 +1,30 @@
-.catalog-main {
-  display: flex;
-  flex-direction: column;
-}
-
 .catalog-main__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet_width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 30px 70px 30px;
+    gap: 150px 60px;
+  }
+
+  @media (min-width: @desktop_width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 110px 76px 110px;
+    gap: 80px 63px;
+  }
+}
+
+.catalog-main__item {
+  @media (min-width: @tablet_width) {
+    width: 324px;
+    height: 430px;
+  }
+
+  @media (min-width: @desktop_width) {
+    width: 245px;
+  }
 }
