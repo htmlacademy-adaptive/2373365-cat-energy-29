@@ -1,13 +1,14 @@
 .main-header {
-  padding: 14px 20px;
+  position: relative;
+  padding: 13px 20px 15px 20px;
   display: flex;
   justify-content: space-between;
-}
 
-.main-header__logo {
-  width: 190px;
-  max-height: 38px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @media (min-width: @tablet_width) {
+    padding: 25px 34px 0 30px;
+  }
+
+  @media (min-width: @desktop_width) {
+    padding: 55px 110px 0 110px;
+  }
 }

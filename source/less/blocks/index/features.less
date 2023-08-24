@@ -1,32 +1,65 @@
 .features {
-  box-sizing: border-box;
   padding: 0 20px 49px 20px;
+
+  @media (min-width: @tablet_width) {
+    padding: 0 110px 47px 30px;
+    border-bottom: 1px solid @light_grey_8;
+  }
+
+  @media (min-width: @desktop_width) {
+    padding: 0 110px 69px 110px;
+    border-bottom: none;
+  }
 }
 
 .features__title {
-  font-family: "Oswald", sans-serif;
+  font-family: @font_Oswald;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: @black;
   font-weight: 400;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: @tablet_width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
 }
 
 .features__list {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet_width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 77px 128px;
+  }
+
+  @media (min-width: @desktop_width) {
+    gap: 73px;
+  }
 }
 
 .features__text {
-  font-family: "Lato", sans-serif;
+  font-family: @font_Lato;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: @dark_grey_2;
   font-weight: 400;
   margin: 0;
   margin-left: 80px;
+
+  @media (min-width: @tablet_width) {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 111px;
+  }
 }
 
 .features__item {
@@ -56,30 +89,47 @@
     height: 60px;
     top: 0;
     left: 0;
-    background-color: #68b738;
+    background-color: @green;
   }
-}
 
-.features__item--healthy {
-  &::before {
-    background-image: url("../../../img/icon-leaf.svg");
+  &--healthy {
+    &::before {
+      background-image: url("../../../img/icon-leaf.svg");
+    }
   }
-}
 
-.features__item--handy {
-  &::before {
-    background-image: url("../../../img/icon-bulb.svg");
+  &--handy {
+    &::before {
+      background-image: url("../../../img/icon-bulb.svg");
+    }
   }
-}
 
-.features__item--simple {
-  &::before {
-    background-image: url("../../../img/icon-fork.svg");
+  &--simple {
+    &::before {
+      background-image: url("../../../img/icon-fork.svg");
+    }
   }
-}
 
-.features__item--fast {
-  &::before {
-    background-image: url("../../../img/icon-alarm.svg");
+  &--fast {
+    &::before {
+      background-image: url("../../../img/icon-alarm.svg");
+    }
+  }
+
+  @media (min-width: @tablet_width) {
+    width: 250px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+
+    &::after {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
   }
 }

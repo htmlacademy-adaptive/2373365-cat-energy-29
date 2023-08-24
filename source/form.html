@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -11,28 +12,26 @@
   <div class="page__container">
 
     <header class="main-header">
-      <a href="#" class="main-header__logo logo">
-        <img class="logo__icon logo__icon--primary" src="img/logo-mobile.svg" width="33" height="38"
-          alt="Логотип «Кэт энерджи».">
-        <img class="logo__title" src="img/logo-title.svg" width="101" height="18" alt="Заголовок «Кэт энерджи».">
+      <a href="index.html" class="main-header__logo logo">
+        <img class="logo__title" src="img/logo-title.svg" width="101" height="18" alt="Логотип «Кэт энерджи».">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle main-nav__toggle--open" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
-        <ul class="main-nav__list site-list site-list--close ">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
+        <ul class="main-nav__list main-nav__list--close ">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--secondary" href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--secondary" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="#">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link main-nav__link--secondary" href="#">
               Подбор программы
             </a>
           </li>
@@ -56,18 +55,15 @@
               <legend class="visually-hidden">Информация о питомце.</legend>
               <div class="cat-info__wrapper">
                 <label class="cat-info__label" for="cat-name">Имя:*</label>
-                <input class="cat-info__input" id="cat-name" type="text" name="cat-name"
-                  placeholder="Укажите имя питомца" value="Барсик" required>
+                <input class="cat-info__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required>
               </div>
               <div class="cat-info__wrapper">
                 <label class="cat-info__label" for="cat-weight">Вес (кг):*</label>
-                <input class="cat-info__input" id="cat-weight" type="number" name="cat-weight"
-                  placeholder="Укажите вес питомца" value="7" required>
+                <input class="cat-info__input" id="cat-weight" type="number" name="cat-weight" placeholder="7" required>
               </div>
               <div class="cat-info__wrapper">
                 <label class="cat-info__label" for="cat-age">Возраст (лет):</label>
-                <input class="cat-info__input" id="cat-age" type="number" name="cat-age"
-                  placeholder="Укажите возраст питомца" value="7">
+                <input class="cat-info__input" id="cat-age" type="number" name="cat-age" placeholder="7">
               </div>
             </fieldset>
             <fieldset class="cat-data__strategy strategy">
@@ -98,30 +94,31 @@
             </fieldset>
           </div>
 
-          <fieldset class="form__owner-data owner-data">
-            <legend class="owner-data__title">Контактные данные (владельца кота)</legend>
-            <div class="owner-data__comtainer">
-              <div class="owner-data__wrapper">
+          <fieldset class="form__fieldset owner-data">
+            <legend class="owner-data__title appointment__subtitle">Контактные данные (владельца кота)</legend>
+            <div class="owner-data__container">
+              <div class="owner-data__wrapper  owner-data__wrapper--email">
                 <label class="owner-data__label" for="E-mail">E-mail:*</label>
-                <input class="owner-data__input" id="E-mail" type="email" name="E-mail" placeholder="Укажите ваш e-mail"
-                  value="kuklachev@gmail.com" required>
+                <input class="owner-data__input" id="E-mail" type="email" name="E-mail"
+                  placeholder="kuklachev@gmail.com" required>
               </div>
-              <div class="owner-data__wrapper">
+              <div class="owner-data__wrapper  owner-data__wrapper--phone">
                 <label class="owner-data__label" for="phone">Телефон:*</label>
-                <input class="owner-data__input" id="phone" type="tel" name="phone" placeholder="Укажите ваш телефон"
-                  value="8 (960) 900-60-90" required>
+                <input class="owner-data__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90"
+                  required>
               </div>
             </div>
           </fieldset>
 
-          <fieldset class="form__comment comment">
-            <legend class="comment__title">Комментарий</legend>
-            <textarea class="comment_input" name="comment" id="comment"
-              placeholder="Расскажите обо всех повадках кота"></textarea>
+          <fieldset class="form__fieldset comment">
+            <legend class="comment__title appointment__subtitle">Комментарий</legend>
+            <textarea class="comment__input" name="comment" id="comment"
+              placeholder="Расскажите обо всех повадках кота">
+            </textarea>
           </fieldset>
 
-          <fieldset class="form__extra extra">
-            <legend class="extra__title">Дополнительно</legend>
+          <fieldset class="form__fieldset extra">
+            <legend class="extra__title appointment__subtitle">Дополнительно</legend>
             <ul class="extra__list">
               <li class="extra__item">
                 <label class="extra__control control">
@@ -169,9 +166,10 @@
 
     <footer class="main-footer">
       <div class="main-footer__adress adress">
-        <div class="adress__wrapper">
-          <h2 class="adress__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="adress__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="adress__wrapper adress__wrapper--secondary">
+          <h2 class="adress__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
+          <p class="adress__text">ул. Большая Конюшенная, д. 19/8 <span
+              class="adress__text--city">Санкт-Петербург</span></p>
         </div>
         <div class="adress__map">
           <div style="position: relative;
@@ -184,16 +182,16 @@
               style="color: #eeeeee;
         font-size: 12px;
         position: absolute;
-        top: 14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe
+        top: 14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe class="adress__map-widget"
               src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.63"
-              width="320" height="362" frameborder="1" allowfullscreen="true" style="position: relative;"></iframe>
+              width="320" height="362" frameborder="0" allowfullscreen="true" style="position: relative;"></iframe>
           </div>
         </div>
       </div>
       <div class="main-footer__contacts contacts">
         <ul class="contacts__list">
           <li class="contacts__item">
-            <a href="#" class="contacts-logo logo">
+            <a href="#" class="contacts__logo">
               <img class="logo__title" src="img/logo-title.svg" width="128" height="24" alt="Заголовок «Кэт энерджи».">
             </a>
           </li>
@@ -243,7 +241,7 @@
           <li class="contacts__item">
             <a class="contacts__academy-link" href="htmlacademy.ru">
               <h3 class="contacts__subtitle">
-                HTML Академия
+                HTML Academy
               </h3>
               <svg class="contacts__svg" role="img" focusable="false" aria-hidden="true" width="27" height="35"
                 viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -263,7 +261,7 @@
         </ul>
       </div>
     </footer>
-
+    <script src="js/app.js"></script>
   </div>
 </body>
 

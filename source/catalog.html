@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -11,28 +12,26 @@
   <div class="page__container">
 
     <header class="main-header">
-      <a href="#" class="main-header__logo logo">
-        <img class="logo__icon logo__icon--primary" src="img/logo-mobile.svg" width="33" height="38"
-          alt="Логотип «Кэт энерджи».">
-        <img class="logo__title" src="img/logo-title.svg" width="101" height="18" alt="Заголовок «Кэт энерджи».">
+      <a href="index.html" class="main-header__logo logo">
+        <img class="logo__title" src="img/logo-title.svg" width="101" height="18" alt="Логотип «Кэт энерджи».">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle main-nav__toggle--open" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
-        <ul class="main-nav__list site-list site-list--close ">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
+        <ul class="main-nav__list main-nav__list--close ">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--secondary" href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="#">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link main-nav__link--secondary" href="#">
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--secondary" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -50,8 +49,8 @@
 
         <section class="catalog-main">
           <h2 class="visually-hidden">Основные товары</h2>
-          <ul class="catalog-main__list main-list">
-            <li class="main-list__item product-card">
+          <ul class="catalog-main__list">
+            <li class="catalog-main__item product-card">
               <img class="product-card__image" src="img/product-chicken-500.png" width="72" height="84"
                 alt="Фото кэт энерджи про с курицей 500 грамм.">
               <div class="product-card__wrapper">
@@ -73,7 +72,7 @@
               </div>
               <a class="product-card__link button" href="form.html">Заказать</a>
             </li>
-            <li class="main-list__item product-card">
+            <li class="catalog-main__item product-card">
               <img class="product-card__image" src="img/product-chicken-1000.png" width="84" height="100"
                 alt="Фото кэт энерджи про с курицей 1000 грамм.">
               <div class="product-card__wrapper">
@@ -95,7 +94,7 @@
               </div>
               <a class="product-card__link button" href="form.html">Заказать</a>
             </li>
-            <li class="main-list__item product-card">
+            <li class="catalog-main__item product-card">
               <img class="product-card__image" src="img/product-fish-500.png" width="72" height="84"
                 alt="Фото кэт энерджи про с рыбой 500 грамм.">
               <div class="product-card__wrapper">
@@ -117,7 +116,7 @@
               </div>
               <a class="product-card__link button" href="form.html">Заказать</a>
             </li>
-            <li class="main-list__item product-card">
+            <li class="catalog-main__item product-card">
               <img class="product-card__image" src="img/product-chicken-1000.png" width="84" height="100"
                 alt="Фото кэт энерджи про с рыбой 1000 грамм.">
               <div class="product-card__wrapper">
@@ -139,7 +138,7 @@
               </div>
               <a class="product-card__link button" href="form.html">Заказать</a>
             </li>
-            <li class="main-list__item product-card">
+            <li class="catalog-main__item product-card">
               <img class="product-card__image" src="img/product-grechka-500.png" width="72" height="84"
                 alt="Фото кэт энерджи про с гречкой 500 грамм.">
               <div class="product-card__wrapper">
@@ -161,7 +160,7 @@
               </div>
               <a class="product-card__link button" href="form.html">Заказать</a>
             </li>
-            <li class="main-list__item product-card">
+            <li class="catalog-main__item product-card">
               <img class="product-card__image" src="img/product-grechka-1000.png" width="84" height="100"
                 alt="Фото кэт энерджи про с гречкой 1000 грамм.">
               <div class="product-card__wrapper">
@@ -183,7 +182,7 @@
               </div>
               <a class="product-card__link button" href="form.html">Заказать</a>
             </li>
-            <li class="main-list__item product-card">
+            <li class="catalog-main__item product-card">
               <img class="product-card__image" src="img/product-rice-500.png" width="72" height="84"
                 alt="Фото кэт энерджи про с рисом 500 грамм.">
               <div class="product-card__wrapper">
@@ -205,44 +204,46 @@
               </div>
               <a class="product-card__link button" href="form.html">Заказать</a>
             </li>
+            <li class="catalog-main__item more-card">
+              <h3 class="more-card__title">Показать еще 100500 товаров</h3>
+              <p class="more-card__text">На самом деле вкусов гораздо больше!</p>
+              <a class="more-card__link" href="#">Показать все</a>
+            </li>
           </ul>
-          <div class="catalog-main__more-card more-card">
-            <h3 class="more-card__title">Показать еще 100500 товаров</h3>
-            <p class="more-card__text">На самом деле вкусов гораздо больше!</p>
-            <a class="more-card__link" href="#">Показать все</a>
-          </div>
         </section>
 
         <section class="catalog-extra">
           <h2 class="catalog-extra__title">Дополнительные товары</h2>
-          <ul class="catalog-extra__list extra-list">
-            <li class="extra-list__item extra-card">
-              <h3 class="extra-card__title">Сахарозаменитель</h3>
-              <p class="extra-card__text">1 упаковка (100 г)</p>
-              <p class="extra-card__text extra-card__text--price">200 ₽</p>
-              <a class="extra-card__link button" href="form.html">Заказать</a>
-            </li>
-            <li class="extra-list__item extra-card">
-              <h3 class="extra-card__title">Питьевая вода</h3>
-              <p class="extra-card__text">5 литров</p>
-              <p class="extra-card__text extra-card__text--price">50 ₽</p>
-              <a class="extra-card__link button" href="form.html">Заказать</a>
-            </li>
-            <li class="extra-list__item extra-card">
-              <h3 class="extra-card__title">Молоко</h3>
-              <p class="extra-card__text">1 литр</p>
-              <p class="extra-card__text extra-card__text--price">100 ₽</p>
-              <a class="extra-card__link button" href="form.html">Заказать</a>
-            </li>
-            <li class="extra-list__item extra-card">
-              <h3 class="extra-card__title">Витамины</h3>
-              <p class="extra-card__text">1 упаковка (30 г)</p>
-              <p class="extra-card__text extra-card__text--price">300 ₽</p>
-              <a class="extra-card__link button" href="form.html">Заказать</a>
-            </li>
-          </ul>
-          <div class="catalog-extra__gift gift">
-            <p class="gift__text">Закажите все<br> и получите чехол для кота в подарок!</p>
+          <div class="catalog-extra__wrapper">
+            <ul class="catalog-extra__list">
+              <li class="catalog-extra__item extra-card">
+                <h3 class="extra-card__title">Сахарозаменитель</h3>
+                <p class="extra-card__text">1 упаковка (100 г)</p>
+                <p class="extra-card__text extra-card__text--price">200 ₽</p>
+                <a class="extra-card__link button" href="form.html">Заказать</a>
+              </li>
+              <li class="extra-list__item extra-card">
+                <h3 class="extra-card__title">Питьевая вода</h3>
+                <p class="extra-card__text">5 литров</p>
+                <p class="extra-card__text extra-card__text--price">50 ₽</p>
+                <a class="extra-card__link button" href="form.html">Заказать</a>
+              </li>
+              <li class="extra-list__item extra-card">
+                <h3 class="extra-card__title">Молоко</h3>
+                <p class="extra-card__text">1 литр</p>
+                <p class="extra-card__text extra-card__text--price">100 ₽</p>
+                <a class="extra-card__link button" href="form.html">Заказать</a>
+              </li>
+              <li class="extra-list__item extra-card">
+                <h3 class="extra-card__title">Витамины</h3>
+                <p class="extra-card__text">1 упаковка (30 г)</p>
+                <p class="extra-card__text extra-card__text--price">300 ₽</p>
+                <a class="extra-card__link button" href="form.html">Заказать</a>
+              </li>
+            </ul>
+            <div class="catalog-extra__gift gift">
+              <p class="gift__text">Закажите все<br> и получите чехол для кота в подарок!</p>
+            </div>
           </div>
         </section>
       </div>
@@ -251,9 +252,10 @@
 
     <footer class="main-footer">
       <div class="main-footer__adress adress">
-        <div class="adress__wrapper">
-          <h2 class="adress__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="adress__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="adress__wrapper adress__wrapper--secondary">
+          <h2 class="adress__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
+          <p class="adress__text">ул. Большая Конюшенная, д. 19/8 <span
+              class="adress__text--city">Санкт-Петербург</span></p>
         </div>
         <div class="adress__map">
           <div style="position: relative;
@@ -266,16 +268,16 @@
               style="color: #eeeeee;
         font-size: 12px;
         position: absolute;
-        top: 14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe
+        top: 14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe class="adress__map-widget"
               src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.63"
-              width="320" height="362" frameborder="1" allowfullscreen="true" style="position: relative;"></iframe>
+              width="320" height="362" frameborder="0" allowfullscreen="true" style="position: relative;"></iframe>
           </div>
         </div>
       </div>
       <div class="main-footer__contacts contacts">
         <ul class="contacts__list">
           <li class="contacts__item">
-            <a href="#" class="contacts-logo logo">
+            <a href="#" class="contacts__logo">
               <img class="logo__title" src="img/logo-title.svg" width="128" height="24" alt="Заголовок «Кэт энерджи».">
             </a>
           </li>
@@ -325,7 +327,7 @@
           <li class="contacts__item">
             <a class="contacts__academy-link" href="htmlacademy.ru">
               <h3 class="contacts__subtitle">
-                HTML Академия
+                HTML Academy
               </h3>
               <svg class="contacts__svg" role="img" focusable="false" aria-hidden="true" width="27" height="35"
                 viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -345,7 +347,7 @@
         </ul>
       </div>
     </footer>
-
+    <script src="js/app.js"></script>
   </div>
 </body>
 

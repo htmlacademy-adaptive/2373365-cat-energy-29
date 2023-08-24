@@ -1,28 +1,104 @@
 .appointment {
-  background-color: #ffffff;
+  background-color: @white;
 }
 
 .appointment__header {
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid @light_grey_4;
   padding: 27px 20px 39px 20px;
+
+  @media (min-width: @tablet_width) {
+    padding: 65px 70px 66px 70px;
+    border: none;
+  }
+
+  @media (min-width: @desktop_width) {
+    padding: 74px 110px 66px 110px;
+  }
 }
 
 .appointment__title {
-  font-family: "Oswald", sans-serif;
+  font-family: @font_Oswald;
   font-size: 36px;
   line-height: 36px;
-  color: #000000;
+  color: @black;
   font-weight: 400;
   margin: 0;
   margin-bottom: 37px;
+
+  @media (min-width: @tablet_width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop_width) {
+    margin-bottom: 55px;
+  }
+}
+
+.appointment__subtitle {
+  font-family: @font_Oswald;
+  font-size: 24px;
+  line-height: 26px;
+  color: @black;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  display: block;
+  position: relative;
+  width: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: @green;
+    top: 16px;
+    right: -20px;
+  }
+
+  @media (min-width: @tablet_width) {
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after {
+      top: 22px;
+      right: -70px;
+    }
+  }
+
+  @media (min-width: @desktop_width) {
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after {
+      top: 22px;
+      right: -110px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      background-color: @green;
+      top: 22px;
+      left: -110px;
+    }
+  }
 }
 
 .appointment__text {
-  font-family: "Oswald", sans-serif;
+  font-family: @font_Oswald;
   font-size: 14px;
   line-height: 18px;
-  color: #000000;
+  color: @black;
   font-weight: 400;
   margin: 0;
   text-transform: uppercase;
+
+  @media (min-width: @tablet_width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+  }
 }
