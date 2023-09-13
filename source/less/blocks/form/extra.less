@@ -22,18 +22,22 @@
   @media (min-width: @tablet_width) {
     margin-bottom: 57px;
 
+    &::before {
+      width: 30px;
+    }
+
     &::after {
       width: 446px;
     }
   }
 
   @media (min-width: @desktop_width) {
-    &::after {
-      width: 1078px;
-    }
-
     &::before {
       width: 70px;
+    }
+
+    &::after {
+      width: 1078px;
     }
   }
 }

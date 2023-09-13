@@ -1,12 +1,13 @@
 .cat-info {
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   gap: 14px;
   border: none;
   border-bottom: 1px solid @light_grey_4;
-  padding: 0 20px 20px 24px;
+  padding: 0 20px 20px 20px;
 
   @media (min-width: @tablet_width) {
     padding: 0 70px 72px 70px;
@@ -21,19 +22,15 @@
 
 .cat-info__wrapper {
   display: flex;
-  gap: 14px;
-  height: 45px;
+  flex-wrap: wrap;
+  gap: 13px;
+  min-height: 45px;
   justify-content: space-between;
-
-  @media (min-width: @tablet_width) {
-    height: 52px;
-  }
 }
 
 .cat-info__label {
   display: flex;
   align-items: center;
-  min-width: max-content;
   font-family: @font_Oswald;
   font-size: 16px;
   line-height: 18px;

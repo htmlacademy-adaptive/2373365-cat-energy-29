@@ -8,6 +8,7 @@
 }
 
 .main-nav__list {
+  display: none;
   list-style: none;
   position: absolute;
   z-index: 2;
@@ -18,41 +19,59 @@
   margin: 0;
   text-align: center;
   background-color: @white;
+  border-bottom: 1px solid @light_grey_2;
 
-  &--close {
-    display: none;
+  &--nojs {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: -15px;
+    position: relative;
+    top: auto;
+    width: 280px;
+  }
 
-    @media (min-width: @tablet_width) {
-      display: flex;
-      flex-wrap: wrap;
-      left: auto;
-      top: auto;
-      padding-top: 14px;
-      gap: 33px;
-      width: 436px;
-    }
+  &--open {
+    display: block;
+  }
 
-    @media (min-width: @desktop_width) {
-      background-color: transparent;
-      padding-top: 16px;
-      width: 475px;
-      gap: 32px;
-    }
+  @media (min-width: @tablet_width) {
+    display: flex;
+    flex-wrap: wrap;
+    left: auto;
+    top: auto;
+    padding-top: 14px;
+    gap: 33px;
+    width: 436px;
+    border: none;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop_width) {
+    background-color: transparent;
+    padding-top: 16px;
+    width: 475px;
+    gap: 32px;
   }
 }
 
 .main-nav__toggle {
   width: 24px;
   height: 38px;
-  background-image: url("../../img/menu-close.svg");
+  background-image: url("../../img/menu-open.svg");
   background-repeat: no-repeat;
   background-color: @white;
   background-position: center;
   border: none;
   cursor: pointer;
 
+  &--nojs {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+  }
+
   &--open {
-    background-image: url("../../img/menu-open.svg");
+    background-image: url("../../img/menu-close.svg");
   }
 
   @media (min-width: @tablet_width) {
@@ -61,22 +80,25 @@
 }
 
 .main-nav__item {
-  height: 66px;
+  min-height: 36px;
   padding: 22px;
   padding-bottom: 24px;
   border-top: 1px solid @light_grey_2;
-
-  &:last-child {
-    border-bottom: 1px solid @light_grey_2;
-  }
 
   @media (min-width: @tablet_width) {
     border: none;
     padding: 0;
     height: max-content;
 
-    &:last-child {
-      border: none;
+    &--active {
+      border-bottom: 2px solid @green;
+      padding-bottom: 8px;
+    }
+  }
+
+  @media (min-width: @desktop_width) {
+    &--active-index {
+      border-bottom: 2px solid @white;
     }
   }
 }
