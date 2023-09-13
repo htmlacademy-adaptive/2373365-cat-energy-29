@@ -37,7 +37,6 @@
     &--before {
       clip: rect(0, 284px, 512px, 0);
     }
-
   }
 }
 
@@ -56,6 +55,7 @@
   background-color: @dark_grey;
   border-radius: 2px;
   left: 50%;
+  top: 0;
 
   &::before {
     content: "";
@@ -92,5 +92,29 @@
     background: none;
     -webkit-appearance: none;
     cursor: col-resize;
+
+    @media (min-width: @tablet_width) {
+      height: 512px;
+    }
+  }
+
+  &:hover + .slider__divider {
+    background-color: @green;
+  }
+
+  &:hover + .slider__divider::before {
+    border: 2px solid @green;
+    background-image: url("../../../img/slider-triangle-green.svg");
+  }
+
+  &:active + .slider__divider {
+    opacity: 0.6;
+    background-color: @green;
+  }
+
+  &:active + .slider__divider::before {
+    opacity: 0.6;
+    border: 2px solid @green;
+    background-image: url("../../../img/slider-triangle-green.svg");
   }
 }

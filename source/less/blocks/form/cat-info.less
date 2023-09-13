@@ -55,6 +55,29 @@
   font-weight: 400;
   text-transform: uppercase;
 
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &:hover:not(:disabled) {
+    border: 1px solid @light_grey_3;
+  }
+
+  &:focus:invalid {
+    border: 1px solid #ff8282;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid @dark_grey_2;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet_width) {
     height: 52px;
     font-size: 20px;

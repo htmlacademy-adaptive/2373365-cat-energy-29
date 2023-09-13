@@ -178,7 +178,7 @@
 .strategies__link {
   display: flex;
   align-items: center;
-  width: 134px;
+  width: 139px;
   min-height: 24px;
   text-decoration: none;
   font-family: @font_Oswald;
@@ -190,13 +190,17 @@
   text-transform: uppercase;
   position: relative;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     content: "";
     position: absolute;
     width: 24px;
     height: 12px;
     top: 6px;
-    right: 8px;
+    right: 17px;
     background-image: url("../../../img/icon-arrow.svg");
     background-position: center;
     background-size: 24px 12px;
@@ -204,9 +208,17 @@
   }
 
   @media (min-width: @tablet_width) {
+    width: 165px;
+
+    &::after {
+      top: 9px;
+      right: 8px;
+    }
+  }
+
+  @media (min-width: @tablet_width) {
     font-size: 20px;
     line-height: 30px;
     margin: 0;
-    width: 168px;
   }
 }

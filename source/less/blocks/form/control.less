@@ -74,8 +74,20 @@
   }
 }
 
-.control__input::-webkit-outer-spin-button,
-.control__input::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
+.control__input {
+  &:disabled + .control__radio,
+  &:disabled + .control__radio + .control__label {
+    opacity: 0.3;
+  }
+
+  &:hover + .control__radio,
+  &:hover + .control__mark {
+    border: 1px solid @light_grey_9;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
 }

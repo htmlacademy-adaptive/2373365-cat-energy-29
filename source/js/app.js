@@ -11,12 +11,12 @@ mainNavToggle.onclick = function() {
 
 
 // let slider = document.querySelector(".slider__input");
-// let image = document.querySelector(".slider__image");
+// let imageBefore = document.querySelector(".slider__image--before");
+// let imageAfter = document.querySelector(".slider__image--after");
 // let divider = document.querySelector(".slider__divider");
-// let x = 50'px';
 
 // slider.oninput = ()=>{
 //   let sliderVal = slider.value;
-//   divider.style.left = sliderVal + 'px';
-//   image.style.clip = "rect(0," + x + sliderVal + ", 90, " + x + sliderVal + ", 0)";
+//   divider.style.left = sliderVal + '%';
+//   image.style.clip = `rect(0px, ${sliderVal}px, 256px, 0px)`;
 // }
