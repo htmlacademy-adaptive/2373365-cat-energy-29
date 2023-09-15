@@ -88,8 +88,9 @@
 
 .extra-card__link {
   grid-area: 3/1/4/-1;
-  width: 280px;
-  height: 40px;
+  padding: 10px;
+  width: 100%;
+  min-height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,11 +102,10 @@
 
   @media (min-width: @tablet_width) {
     grid-area: 2/1/3/-1;
-    width: 632px;
   }
 
   @media (min-width: @desktop_width) {
     grid-area: 1/4/2/5;
-    width: 244px;
+    min-width: 244px;
   }
 }

@@ -1,6 +1,8 @@
 .slider {
   position: relative;
   min-height: 256px;
+  width: 280px;
+  overflow: hidden;
 
   @media (min-width: @tablet_width) {
     width: 560px;
@@ -11,23 +13,49 @@
 .slider__image {
   display: block;
   position: absolute;
+  width: 100%;
   top: 0;
   left: 0;
+  z-index: 2;
+
+  &--after {
+    clip: rect(0, 280px, 256px, 140px);
+  }
+
+  &--before {
+    clip: rect(0, 140px, 256px, 0);
+  }
 
   @media (min-width: @tablet_width) {
     width: 560px;
     height: 512px;
+
+    &--after {
+      clip: rect(0, 560px, 512px, 284px);
+    }
+
+    &--before {
+      clip: rect(0, 284px, 512px, 0);
+    }
   }
 }
 
-.slider__divider {
+.slider__wrapper {
   position: absolute;
-  height: 256px;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.slider__divider {
   width: 4px;
+  height: 256px;
+  position: absolute;
+  pointer-events: none;
   background-color: @dark_grey;
   border-radius: 2px;
   left: 50%;
-  z-index: 1;
+  top: 0;
 
   &::before {
     content: "";
@@ -44,5 +72,49 @@
     background-repeat: no-repeat;
     background-size: 24px 18px;
     background-position: center;
+    cursor: grab;
+  }
+
+  @media (min-width: @tablet_width) {
+    height: 512px;
+  }
+}
+
+.slider__input {
+  width: 100%;
+  outline: none;
+  background: none;
+  -webkit-appearance: none; /* stylelint-disable-line */
+
+  &::-webkit-slider-thumb {
+    height: 256px;
+    width: 4px;
+    background: none;
+    -webkit-appearance: none; /* stylelint-disable-line */
+    cursor: col-resize;
+
+    @media (min-width: @tablet_width) {
+      height: 512px;
+    }
+  }
+
+  &:hover + .slider__divider {
+    background-color: @green;
+  }
+
+  &:hover + .slider__divider::before {
+    border: 2px solid @green;
+    background-image: url("../../../img/slider-triangle-green.svg");
+  }
+
+  &:active + .slider__divider {
+    opacity: 0.6;
+    background-color: @green;
+  }
+
+  &:active + .slider__divider::before {
+    opacity: 0.6;
+    border: 2px solid @green;
+    background-image: url("../../../img/slider-triangle-green.svg");
   }
 }

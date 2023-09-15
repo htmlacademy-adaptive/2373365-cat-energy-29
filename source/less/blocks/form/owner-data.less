@@ -22,18 +22,22 @@
   @media (min-width: @tablet_width) {
     margin-bottom: 76px;
 
+    &::before {
+      width: 30px;
+    }
+
     &::after {
       width: 146px;
     }
   }
 
   @media (min-width: @desktop_width) {
-    &::after {
-      width: 778px;
-    }
-
     &::before {
       width: 70px;
+    }
+
+    &::after {
+      width: 778px;
     }
   }
 }
@@ -56,44 +60,30 @@
 
 .owner-data__wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 13px;
-  height: 45px;
+  min-height: 45px;
   justify-content: space-between;
   position: relative;
+}
 
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 13px;
-    right: 12px;
-    width: 20px;
-    height: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &--email {
-    &::after {
-      background-image: url("../../../img/icon-email.svg");
-    }
-  }
-
-  &--phone {
-    &::after {
-      background-image: url("../../../img/icon-phone.svg");
-    }
-  }
+.owner-data__icon {
+  display: block;
+  position: absolute;
+  top: 13px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
 
   @media (min-width: @tablet_width) {
-    height: 52px;
+    top: 16px;
+    right: 14px;
   }
 }
 
 .owner-data__label {
   display: flex;
   align-items: center;
-  min-width: max-content;
   font-family: @font_Oswald;
   font-size: 16px;
   line-height: 18px;
@@ -118,8 +108,41 @@
   font-weight: 400;
   text-transform: uppercase;
 
+  &:hover:not(:disabled) {
+    border: 1px solid @light_grey_3;
+  }
+
+  &:focus:invalid {
+    border: 1px solid @pink;
+  }
+
+  &:focus:invalid + .owner-data__icon {
+    line,
+    path {
+      stroke: @pink;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid @dark_grey_2;
+  }
+
+  &:focus + .owner-data__icon {
+    line,
+    path {
+      stroke: @green;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet_width) {
+    height: 52px;
     font-size: 20px;
     line-height: 30px;
+    padding: 11px 20px;
   }
 }
