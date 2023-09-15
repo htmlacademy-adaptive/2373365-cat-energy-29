@@ -2,7 +2,7 @@
   padding: 0 20px 49px 20px;
 
   @media (min-width: @tablet_width) {
-    padding: 0 110px 47px 30px;
+    padding: 0 30px 47px 30px;
     border-bottom: 1px solid @light_grey_8;
   }
 
@@ -121,6 +121,7 @@
     height: 240px;
     display: flex;
     flex-direction: column;
+    z-index: 2;
 
     &::after {
       width: 80px;
@@ -130,6 +131,27 @@
     &::before {
       width: 80px;
       height: 80px;
+    }
+  }
+}
+
+.features__number {
+  display: none;
+
+  @media (min-width: @tablet_width) {
+    display: block;
+    font-family: @font_Oswald;
+    font-size: 280px;
+    line-height: 280px;
+    color: @dark_grey;
+    position: absolute;
+    right: 0;
+    top: -40px;
+    z-index: 1;
+    opacity: 0.1;
+
+    &--healthy {
+      right: 26px;
     }
   }
 }
