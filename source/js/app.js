@@ -18,5 +18,5 @@ mainNavToggle.onclick = function() {
 // slider.oninput = ()=>{
 //   let sliderVal = slider.value;
 //   divider.style.left = sliderVal + '%';
-//   imageBefore.style.clip = "rect(0, " + divider.style.left + " '%', auto, 0)";
+//   imageBefore.style.clip = "rect(0, " + sliderVal + " '%', auto, 0)";
 // }
