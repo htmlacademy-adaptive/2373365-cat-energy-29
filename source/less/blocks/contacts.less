@@ -62,8 +62,13 @@
   width: 280px;
   height: 34px;
 
-  &:active {
+  &:active + .contacts__icon {
+    color: @green;
     opacity: 0.3;
+  }
+
+  &:hover + .contacts__icon {
+    color: @green;
   }
 
   @media (min-width: @tablet_width) {
@@ -73,15 +78,6 @@
 
 .contacts__icon {
   color: @dark_grey;
-
-  &:hover {
-    color: @green;
-  }
-
-  &:active {
-    color: @green;
-    opacity: 0.3;
-  }
 }
 
 .contacts__subtitle {
