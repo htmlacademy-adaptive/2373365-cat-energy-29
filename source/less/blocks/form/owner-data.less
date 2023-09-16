@@ -74,6 +74,8 @@
   right: 12px;
   width: 20px;
   height: 20px;
+  stroke: @black;
+  color: @black;
 
   @media (min-width: @tablet_width) {
     top: 16px;
@@ -117,10 +119,8 @@
   }
 
   &:focus:invalid + .owner-data__icon {
-    line,
-    path {
-      stroke: @pink;
-    }
+    stroke: @pink;
+    color: @pink;
   }
 
   &:focus {
@@ -129,10 +129,8 @@
   }
 
   &:focus + .owner-data__icon {
-    line,
-    path {
-      stroke: @green;
-    }
+    stroke: @green;
+    color: @green;
   }
 
   &:disabled {
