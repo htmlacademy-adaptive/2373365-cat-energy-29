@@ -178,6 +178,7 @@
 .strategies__link {
   display: flex;
   align-items: center;
+  gap: 15px;
   width: 139px;
   min-height: 24px;
   text-decoration: none;
@@ -188,37 +189,37 @@
   font-weight: 400;
   margin-top: 15px;
   text-transform: uppercase;
-  position: relative;
 
-  &:active {
-    opacity: 0.3;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
+  &--icon {
     width: 24px;
     height: 12px;
-    top: 6px;
-    right: 17px;
     background-image: url("../../../img/icon-arrow.svg");
-    background-position: center;
-    background-size: 24px 12px;
+    background-position: left;
     background-repeat: no-repeat;
   }
 
   @media (min-width: @tablet_width) {
     width: 165px;
-
-    &::after {
-      top: 9px;
-      right: 8px;
-    }
-  }
-
-  @media (min-width: @tablet_width) {
     font-size: 20px;
     line-height: 30px;
     margin: 0;
+    gap: 25px;
+  }
+
+  @media (min-width: @desktop_width) {
+    width: 168px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:active {
+    .strategies__link--icon {
+      background-image: url("../../../img/icon-arrow-2.svg");
+      width: 32px;
+      height: 10px;
+    }
   }
 }

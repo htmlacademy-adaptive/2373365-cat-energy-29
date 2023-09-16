@@ -44,8 +44,12 @@
       <section class="hero">
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__text">Занялся собой? Займись котом!</p>
-        <img class="hero__logo" src="img/hero-pic.png" width="280" height="270"
-          alt="Изображение продукции «Кэт энерджи».">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/cat-hero-desktop.png 1x, img/cat-hero-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/cat-hero-tablet.png 1x, img/cat-hero-tablet@2x.png 2x">
+          <img class="hero__logo" src="img/cat-hero-mobile.png" srcset="img/cat-hero-mobile@2x.png 2x" width="280"
+            height="270" alt="Изображение продукции «Кэт энерджи».">
+        </picture>
         <a class="hero__link button" href="form.html">Подобрать программу</a>
       </section>
 
@@ -56,13 +60,18 @@
             <h3 class="strategies__title">Похудение</h3>
             <p class="strategies__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
               на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="strategies__link" href="catalog.html">Каталог slim</a>
+            <a class="strategies__link" href="catalog.html">
+              <span class="strategies__link--text">Каталог
+                slim</span>
+              <span class="strategies__link--icon"></span></a>
           </li>
           <li class="strategies__item">
             <h3 class="strategies__title">Набор массы</h3>
             <p class="strategies__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
               поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="strategies__link" href="catalog.html">Каталог pro</a>
+            <a class="strategies__link" href="catalog.html">
+              <span class="strategies__link--text">Каталог pro</span>
+              <span class="strategies__link--icon"></span></a>
           </li>
         </ul>
       </section>
@@ -119,10 +128,16 @@
         </div>
         <div class="review__slider slider">
           <div class="slider__images">
-            <img class="slider__image slider__image--before" src="img/cat-boris-before.png" width="280" height="256"
-              alt="Фото кота Бориса до.">
-            <img class="slider__image slider__image--after" src="img/cat-boris-after.png" width="280" height="256"
-              alt="Фото кота Бориса после.">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
+              <img class="slider__image slider__image--before" src="img/cat-before-mobile.png"
+                srcset="img/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Фото кота Бориса до.">
+            </picture>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
+              <img class="slider__image slider__image--after" src="img/cat-after-mobile.png"
+                srcset="img/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Фото кота Бориса после.">
+            </picture>
           </div>
           <div class="slider__wrapper">
             <input class="slider__input" type="range" min="0" max="100" value="50">
