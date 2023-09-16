@@ -64,20 +64,23 @@
 
   &:active {
     opacity: 0.3;
-
-    path {
-      fill: @green;
-    }
-  }
-
-  &:hover {
-    path {
-      fill: @green;
-    }
   }
 
   @media (min-width: @tablet_width) {
     width: 168px;
+  }
+}
+
+.contacts__icon {
+  color: @dark_grey;
+
+  &:hover {
+    color: @green;
+  }
+
+  &:active {
+    color: @green;
+    opacity: 0.3;
   }
 }
 
