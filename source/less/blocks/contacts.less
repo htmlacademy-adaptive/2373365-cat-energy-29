@@ -10,6 +10,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 55px 30px;
+    padding-top: 56px;
   }
 
   @media (min-width: @desktop_width) {
@@ -19,7 +20,7 @@
 
 .contacts__item {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
 
   &:not(:last-child) {
     border-bottom: 1px solid @light_grey_4;
@@ -55,6 +56,9 @@
 }
 
 .contacts__icon {
+  display: block;
+  max-width: 27px;
+  max-height: 34px;
   color: @dark_grey;
 }
 
@@ -87,4 +91,8 @@
   color: @dark_grey_2;
   font-weight: 400;
   margin: 0;
+
+  @media (min-width: @tablet_width) {
+    margin-left: 6px;
+  }
 }

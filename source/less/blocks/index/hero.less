@@ -110,6 +110,10 @@
     margin-bottom: 50px;
     max-width: 420px;
   }
+
+  @media (min-width: @desktop_width) {
+    margin-bottom: 52px;
+  }
 }
 
 .hero__link {
@@ -118,12 +122,13 @@
   justify-content: center;
   padding: 7px 44px;
   font-family: @font_Oswald;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   width: 280px;
   min-height: 40px;
+  margin-top: -1px;
 
   @media (min-width: @tablet_width) {
     max-width: 244px;
@@ -137,15 +142,15 @@
 .hero__logo {
   @media (min-width: @tablet_width) {
     position: absolute;
-    bottom: 0;
-    right: 30px;
+    bottom: -1px;
+    right: 29px;
     z-index: -1;
     width: 709px;
     height: 609px;
   }
 
   @media (min-width: @desktop_width) {
-    top: 29px;
+    top: 24px;
     right: 331px;
     z-index: -1;
     width: 552px;
