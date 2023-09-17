@@ -54,6 +54,10 @@
   }
 }
 
+.contacts__icon {
+  color: @dark_grey;
+}
+
 .contacts__academy-link {
   text-decoration: none;
   display: flex;
@@ -62,22 +66,18 @@
   width: 280px;
   height: 34px;
 
-  &:active + .contacts__icon {
-    color: @green;
+  &:active {
     opacity: 0.3;
   }
 
-  &:hover + .contacts__icon {
+  &:active > .contacts__icon,
+  &:hover > .contacts__icon {
     color: @green;
   }
 
   @media (min-width: @tablet_width) {
     width: 168px;
   }
-}
-
-.contacts__icon {
-  color: @dark_grey;
 }
 
 .contacts__subtitle {
