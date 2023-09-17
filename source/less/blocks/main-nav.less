@@ -12,7 +12,7 @@
   list-style: none;
   position: absolute;
   z-index: 2;
-  top: 66px;
+  top: 65px;
   left: 0;
   width: 320px;
   padding: 0;
@@ -60,7 +60,7 @@
   background-image: url("../../img/menu-open.svg");
   background-repeat: no-repeat;
   background-color: @white;
-  background-position: top 9px center;
+  background-position: top 9px right 0;
   border: none;
   cursor: pointer;
 
@@ -72,6 +72,7 @@
 
   &--open {
     background-image: url("../../img/menu-close.svg");
+    background-position: top 8px right -1px;
   }
 
   @media (min-width: @tablet_width) {
@@ -81,7 +82,7 @@
 
 .main-nav__item {
   min-height: 3px;
-  padding-bottom: 22px;
+  padding: 22px 0 23px 0;
   border-top: 1px solid @light_grey_2;
 
   @media (min-width: @tablet_width) {
