@@ -5,9 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
@@ -179,22 +181,21 @@
         <div class="adress__wrapper adress__wrapper--secondary">
           <h2 class="adress__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
           <p class="adress__text">ул. Большая Конюшенная, д. 19/8 <span
-              class="adress__text--city">Санкт-Петербург</span></p>
+              class="adress__city">Санкт-Петербург</span></p>
         </div>
         <div class="adress__map">
           <div style="position: relative;
         overflow: hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
               style="color: #eeeeee;
         font-size: 12px;
-        position: absolute;
-        top: 0 px;">Санкт‑Петербург</a><a
+        position: absolute;">Санкт‑Петербург</a><a
               href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSUYAQFtjfXVyeXpgZQ==/?ll=30.323036%2C59.938631&utm_medium=mapframe&utm_source=maps&z=16.63"
               style="color: #eeeeee;
         font-size: 12px;
         position: absolute;
-        top: 14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe class="adress__map-widget"
+        top: 14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe class="adress__map-widget adress__map-widget--nojs"
               src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.63"
-              width="320" height="362" frameborder="0" allowfullscreen="true" style="position: relative;"></iframe>
+              width="320" height="362" style="position: relative;"></iframe>
           </div>
         </div>
       </div>
@@ -202,7 +203,7 @@
         <ul class="contacts__list">
           <li class="contacts__item">
             <a href="#" class="contacts__logo">
-              <img class="logo__title logo__title--footer" src="img/logo-title.svg" width="128" height="24"
+              <img class="contacts__logo-title" src="img/logo-title.svg" width="128" height="24"
                 alt="Заголовок «Кэт энерджи».">
             </a>
           </li>
