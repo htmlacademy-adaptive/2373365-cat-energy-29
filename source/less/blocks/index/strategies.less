@@ -8,7 +8,7 @@
   }
 
   @media (min-width: @desktop_width) {
-    padding: 0 110px 71px 110px;
+    padding: 82px 110px 74px 110px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 80px;
@@ -62,7 +62,8 @@
   }
 
   @media (min-width: @tablet_width) {
-    padding: 77px 63px 53px 52px;
+    min-height: 372px;
+    padding: 78px 63px 53px 52px;
 
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -72,14 +73,14 @@
       width: 200px;
       height: 200px;
       left: auto;
-      top: 92px;
+      top: 93px;
       right: 63px;
     }
 
     &:nth-child(1)::after {
       width: 140px;
       height: 194px;
-      top: 81px;
+      top: 82px;
       right: 93px;
       left: auto;
       background-size: 140px 194px;
@@ -89,14 +90,14 @@
       width: 268px;
       height: 112px;
       left: auto;
-      top: 135px;
+      top: 136px;
       right: 29px;
       background-size: 268px 112px;
     }
   }
 
   @media (min-width: @desktop_width) {
-    padding: 77px 52px 55px 52px;
+    padding: 78px 52px 55px 52px;
 
     &:not(:last-child) {
       margin-bottom: 0;
@@ -136,7 +137,7 @@
   line-height: 37px;
   color: @black;
   font-weight: 400;
-  margin-top: 10px;
+  margin-top: 6px;
   margin-left: 70px;
   margin-bottom: 29px;
   text-transform: uppercase;
@@ -164,13 +165,13 @@
     padding: 0;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 52px;
     max-width: 340px;
     border: none;
   }
 
   @media (min-width: @desktop_width) {
-    margin-bottom: 23px;
+    margin-bottom: 28px;
     max-width: 100%;
   }
 }
@@ -178,7 +179,7 @@
 .strategies__link {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 16px;
   width: 139px;
   min-height: 24px;
   text-decoration: none;
@@ -187,7 +188,7 @@
   line-height: 16px;
   color: @black;
   font-weight: 400;
-  margin-top: 15px;
+  margin-top: 14px;
   text-transform: uppercase;
 
   &--icon {
@@ -203,11 +204,15 @@
     font-size: 20px;
     line-height: 30px;
     margin: 0;
-    gap: 25px;
+    gap: 26px;
   }
 
   @media (min-width: @desktop_width) {
     width: 168px;
+
+    &--icon {
+      height: 10px;
+    }
   }
 
   &:active {

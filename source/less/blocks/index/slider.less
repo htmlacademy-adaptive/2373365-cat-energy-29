@@ -2,11 +2,16 @@
   position: relative;
   min-height: 256px;
   width: 280px;
-  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: @tablet_width) {
     width: 560px;
     height: 512px;
+  }
+
+  @media (min-width: @desktop_width) {
+    margin-left: 50px;
   }
 }
 
@@ -27,6 +32,8 @@
   }
 
   @media (min-width: @tablet_width) {
+    top: -2px;
+    left: -1px;
     width: 560px;
     height: 512px;
 
@@ -45,6 +52,13 @@
   top: 0;
   width: 100%;
   z-index: 5;
+  min-height: 256px;
+
+  @media (min-width: @tablet_width) {
+    width: 560px;
+    height: 512px;
+    top: -2px;
+  }
 }
 
 .slider__divider {
@@ -54,7 +68,7 @@
   pointer-events: none;
   background-color: @dark_grey;
   border-radius: 2px;
-  left: 50%;
+  left: 138px;
   top: 0;
 
   &::before {
@@ -77,6 +91,7 @@
 
   @media (min-width: @tablet_width) {
     height: 512px;
+    left: 279px;
   }
 }
 

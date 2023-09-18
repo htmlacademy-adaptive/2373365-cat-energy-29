@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
@@ -15,7 +15,7 @@
 <body class="page__body">
   <div class="page__container">
 
-    <header class="main-header">
+    <header class="main-header main-header--nojs">
       <a href="#" class="main-header__logo logo">
         <img class="logo__title" src="img/logo-title.svg" width="101" height="18" alt="Логотип «Кэт энерджи».">
       </a>
@@ -100,7 +100,7 @@
           </li>
           <li class="features__item features__item--fast">
             <h3 class="visually-hidden">Быстро.</h3>
-            <p class="features__text">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
+            <p class="features__text">Уже через месяц наслаждайтесь изменениями к лучшему&nbsp;<br> вашего питомца!</p>
             <span class="features__number">4</span>
           </li>
         </ul>
@@ -110,7 +110,7 @@
         <div class="review__wrapper">
           <h2 class="review__title">Живой пример</h2>
           <p class="review__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+            Отличный результат&nbsp;<br> без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
             часов
             в день.</p>
           <div class="review__stats">
@@ -133,14 +133,14 @@
         <div class="review__slider slider">
           <div class="slider__images">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
-              <img class="slider__image slider__image--before" src="img/cat-before-mobile.png"
-                srcset="img/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Фото кота Бориса до.">
+              <source media="(min-width: 768px)" srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x">
+              <img class="slider__image slider__image--before" loading="lazy" src="img/cat-before-mobile.webp"
+                srcset="img/cat-before-mobile@2x.webp 2x" width="280" height="256" alt="Фото кота Бориса до.">
             </picture>
             <picture>
-              <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
-              <img class="slider__image slider__image--after" src="img/cat-after-mobile.png"
-                srcset="img/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Фото кота Бориса после.">
+              <source media="(min-width: 768px)" srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet@2x.webp 2x">
+              <img class="slider__image slider__image--after" loading="lazy"  src="img/cat-after-mobile.webp"
+                srcset="img/cat-after-mobile@2x.webp 2x" width="280" height="256" alt="Фото кота Бориса после.">
             </picture>
           </div>
           <div class="slider__wrapper">
@@ -180,7 +180,7 @@
         <ul class="contacts__list">
           <li class="contacts__item">
             <a href="#" class="contacts__logo">
-              <img class="logo__title" src="img/logo-title.svg" width="128" height="24" alt="Заголовок «Кэт энерджи».">
+              <img class="logo__title logo__title--footer" src="img/logo-title.svg" width="128" height="24" alt="Заголовок «Кэт энерджи».">
             </a>
           </li>
           <li class="contacts__item social">
@@ -196,22 +196,22 @@
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                  <svg class="social__icon" role="img" focusable="false" aria-hidden="true" width="28" height="22">
-                    <use xlink:href="img/sprite.svg#icon-tg"></use>
-                  </svg>
-                  <span class="visually-hidden">
-                    Мы в Телеграм.
-                  </span>
-                </a>
-              </li>
-              <li class="social__item">
                 <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                   <svg class="social__icon" role="img" focusable="false" aria-hidden="true" width="28" height="22">
                     <use xlink:href="img/sprite.svg#icon-yt"></use>
                   </svg>
                   <span class="visually-hidden">
                     Мы в YouTube.
+                  </span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                  <svg class="social__icon" role="img" focusable="false" aria-hidden="true" width="28" height="22">
+                    <use xlink:href="img/sprite.svg#icon-tg"></use>
+                  </svg>
+                  <span class="visually-hidden">
+                    Мы в Телеграм.
                   </span>
                 </a>
               </li>
@@ -230,7 +230,7 @@
         </ul>
       </div>
     </footer>
-    <script src="js/app.js"></script>
+    <script src="js/app.min.js"></script>
   </div>
 </body>
 

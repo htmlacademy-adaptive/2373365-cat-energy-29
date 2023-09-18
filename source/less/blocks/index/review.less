@@ -3,7 +3,7 @@
   padding: 25px 20px 40px 20px;
 
   @media (min-width: @tablet_width) {
-    padding: 45px 30px 101px 30px;
+    padding: 45px 30px 99px 30px;
     background: linear-gradient(to bottom, @white 57%, @light_grey 57%, @light_grey 100%);
   }
 
@@ -44,15 +44,27 @@
   margin: 0;
   margin-bottom: 20px;
 
+  & br {
+    display: none;
+  }
+
   @media (min-width: @tablet_width) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 55px;
+    margin-bottom: 47px;
+
+    & br {
+      display: none;
+    }
   }
 
   @media (min-width: @desktop_width) {
     max-width: 436px;
     margin-bottom: 69px;
+
+    & br {
+      display: block;
+    }
   }
 }
 
@@ -60,14 +72,13 @@
   @media (min-width: @tablet_width) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 99px;
   }
 
   @media (min-width: @desktop_width) {
     max-width: 436px;
-    gap: 55px;
+    gap: 60px;
     margin: 0;
   }
 }
@@ -76,6 +87,8 @@
   display: flex;
   gap: 32px;
   margin: 0;
+  align-items: center;
+  justify-content: center;
 
   @media (min-width: @tablet_width) {
     gap: 43px;
@@ -88,17 +101,18 @@
 
 .review__item {
   display: flex;
-  align-items: center;
   justify-content: center;
   border: 1px solid @light_grey_3;
   border-radius: 3px;
   position: relative;
   width: 124px;
   height: 54px;
+  padding-top: 14px;
 
   @media (min-width: @tablet_width) {
     width: 162px;
     height: 72px;
+    padding-top: 15px;
   }
 }
 
@@ -147,7 +161,7 @@
 }
 
 .review__summ {
-  margin-top: 34px;
+  margin-top: 36px;
   margin-bottom: 20px;
   display: flex;
   gap: 3px;
@@ -156,11 +170,13 @@
   @media (min-width: @tablet_width) {
     flex-direction: column;
     align-items: end;
+    margin-top: 20px;
+    gap: 9px;
   }
 
   @media (min-width: @desktop_width) {
     flex-direction: row;
-    gap: 63px;
+    gap: 66px;
     margin: 0;
   }
 }

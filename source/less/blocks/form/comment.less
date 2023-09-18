@@ -1,51 +1,31 @@
 .comment {
   margin: 0;
   border: none;
-  padding: 0 20px 23px 20px;
+  padding: 0 20px 19px 20px;
 
   @media (min-width: @tablet_width) {
-    padding: 0 70px 65px 70px;
+    padding: 0 70px 62px 70px;
   }
 
   @media (min-width: @desktop_width) {
-    padding: 0 110px 70px 110px;
+    padding: 0 110px 67px 110px;
   }
 }
 
 .comment__title {
   margin-bottom: 38px;
 
-  &::after {
-    width: 159px;
-  }
-
   @media (min-width: @tablet_width) {
-    margin-bottom: 87px;
-
-    &::before {
-      width: 30px;
-    }
-
-    &::after {
-      width: 476px;
-    }
+    margin-bottom: 86px;
   }
 
   @media (min-width: @desktop_width) {
     margin-bottom: 78px;
-
-    &::before {
-      width: 70px;
-    }
-
-    &::after {
-      width: 1108px;
-    }
   }
 }
 
 .comment__input {
-  width: 280px;
+  width: 100%;
   min-height: 150px;
   font-family: @font_Oswald;
   font-size: 16px;

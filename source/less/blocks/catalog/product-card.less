@@ -4,20 +4,23 @@
   padding-bottom: 25px;
   border-bottom: 1px solid @light_grey_2;
   grid-template-columns: repeat(2, 1fr);
-  gap: 21px 0;
+  gap: 16px 0;
 
   @media (min-width: @tablet_width) {
-    padding: 40px 37px;
-    gap: 33px;
-    grid-template-rows: 85px 157px 40px;
+    padding: 37px;
+    padding-bottom: 40px;
+    padding-top: 0;
+    min-height: 430px;
+    grid-template-rows: 141px min-content 40px;
     grid-template-columns: 1fr;
     background-color: @light_grey;
+    gap: 0;
   }
 
   @media (min-width: @desktop_width) {
     padding: 40px 38px;
-    gap: 32px;
-    grid-template-rows: 80px 167px 40px;
+    gap: 30px;
+    grid-template-rows: 80px min-content 40px;
     background-color: @light_grey;
   }
 }
@@ -26,17 +29,19 @@
   display: block;
   margin: auto;
   padding: 0;
+  height: 107px;
+  object-fit: cover;
 
   @media (min-width: @tablet_width) {
     width: 200px;
     height: 210px;
-    margin-top: -123px;
+    margin-top: -71px;
   }
 
   @media (min-width: @desktop_width) {
     width: 169px;
     height: 210px;
-    margin-top: -111px;
+    margin-top: -112px;
   }
 }
 
@@ -47,15 +52,16 @@
   color: @dark_grey_3;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   width: 80px;
   text-transform: uppercase;
 
   @media (min-width: @tablet_width) {
-    margin: auto;
     margin-bottom: 20px;
+    margin-left: 57px;
+    margin-top: 22px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 24px;
     display: block;
     width: 135px;
     text-align: center;
@@ -63,6 +69,7 @@
 
   @media (min-width: @desktop_width) {
     line-height: 24px;
+    margin: auto;
     margin-bottom: 23px;
   }
 }
@@ -86,10 +93,14 @@
 
   @media (min-width: @tablet_width) {
     padding-bottom: 5px;
-    margin-bottom: 7px;
+    margin-bottom: 6px;
     font-size: 16px;
     line-height: 20px;
     border-bottom: 1px solid @light_grey_3;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 }
 
@@ -110,10 +121,12 @@
   @media (min-width: @tablet_width) {
     grid-row: 3/4;
     width: 250px;
-    margin-top: auto;
+    height: 40px;
+    margin-top: 29px;
   }
 
   @media (min-width: @desktop_width) {
     width: 169px;
+    margin-top: 9px;
   }
 }

@@ -1,15 +1,22 @@
 .main-header {
-  position: relative;
-  padding: 13px 20px 15px 20px;
+  z-index: 3;
+  width: 100%;
+  padding: 13px 20px 14px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  min-height: 65px;
+
+  &--nojs {
+    flex-direction: column;
+  }
 
   @media (min-width: @tablet_width) {
-    padding: 25px 34px 5px 30px;
+    padding: 25px 30px 5px 30px;
   }
 
   @media (min-width: @desktop_width) {
+    position: absolute;
     padding: 55px 110px 5px 110px;
   }
 }

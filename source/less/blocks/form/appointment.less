@@ -7,12 +7,12 @@
   padding: 27px 20px 39px 20px;
 
   @media (min-width: @tablet_width) {
-    padding: 65px 70px 66px 70px;
+    padding: 60px 70px 66px 70px;
     border: none;
   }
 
   @media (min-width: @desktop_width) {
-    padding: 74px 110px 66px 110px;
+    padding: 70px 110px 66px 110px;
   }
 }
 
@@ -33,6 +33,7 @@
 
   @media (min-width: @desktop_width) {
     margin-bottom: 55px;
+    margin-top: 118px;
   }
 }
 
@@ -44,35 +45,33 @@
   font-weight: 400;
   padding: 0;
   margin: 0;
-  display: block;
-  position: relative;
-  width: 100%;
+  display: flex;
+  gap: 20px;
 
   &::after {
     content: "";
-    position: absolute;
-    height: 2px;
-    background-color: @green;
-    top: 16px;
-    right: -20px;
+    height: 17px;
+    border-bottom: 2px solid @green;
+    margin-right: -20px;
+    flex-grow: 1;
   }
 
   @media (min-width: @tablet_width) {
     font-size: 36px;
     line-height: 36px;
+    gap: 40px;
 
     &::before {
       content: "";
-      position: absolute;
-      height: 2px;
-      background-color: @green;
-      top: 22px;
-      left: -70px;
+      width: 30px;
+      height: 24px;
+      border-bottom: 2px solid @green;
+      margin-left: -70px;
     }
 
     &::after {
-      top: 22px;
-      right: -70px;
+      height: 24px;
+      margin-right: -70px;
     }
   }
 
@@ -80,14 +79,15 @@
     font-size: 36px;
     line-height: 36px;
 
-    &::after {
-      top: 22px;
-      right: -110px;
+    &::before {
+      width: 70px;
+      height: 25px;
+      margin-left: -110px;
     }
 
-    &::before {
-      top: 22px;
-      left: -110px;
+    &::after {
+      height: 25px;
+      margin-right: -110px;
     }
   }
 }
@@ -100,6 +100,7 @@
   font-weight: 400;
   margin: 0;
   text-transform: uppercase;
+  width: 250px;
 
   @media (min-width: @tablet_width) {
     font-size: 20px;

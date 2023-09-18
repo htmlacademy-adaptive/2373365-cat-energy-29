@@ -1,6 +1,6 @@
 .catalog-extra {
   @media (min-width: @tablet_width) {
-    padding: 0 30px 70px 30px;
+    padding: 0 30px 75px 30px;
   }
 
   @media (min-width: @desktop_width) {
@@ -14,19 +14,10 @@
   line-height: 24px;
   color: @black;
   font-weight: 400;
+  margin-top: 25px;
   margin-bottom: 36px;
   margin-left: 20px;
   position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    background-color: @green;
-    top: 16px;
-    right: 0;
-    width: 54px;
-  }
 
   @media (min-width: @tablet_width) {
     font-size: 36px;
@@ -34,37 +25,11 @@
     margin-top: 0;
     margin-bottom: 80px;
     margin-left: 40px;
-
-    &::after {
-      right: -30px;
-      width: 320px;
-      top: 22px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      height: 2px;
-      background-color: @green;
-      top: 22px;
-      left: -70px;
-      width: 30px;
-    }
   }
 
   @media (min-width: @desktop_width) {
     margin: 0;
     margin-bottom: 80px;
-
-    &::after {
-      right: -110px;
-      width: 952px;
-    }
-
-    &::before {
-      left: -110px;
-      width: 70px;
-    }
   }
 }
 
