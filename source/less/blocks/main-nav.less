@@ -14,7 +14,8 @@
   z-index: 2;
   top: 65px;
   left: 0;
-  width: 320px;
+  min-width: 320px;
+  width: 100%;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -22,12 +23,12 @@
   border-bottom: 1px solid @light_grey_2;
 
   &--nojs {
-    display: block;
-    margin-top: 15px;
-    margin-bottom: -15px;
+    display: grid;
     position: relative;
-    top: auto;
-    width: 280px;
+    grid-template-rows: repeat(3, 66px);
+    top: 0;
+    margin: 15px 0 -14px 0;
+    border-bottom: none;
   }
 
   &--open {
@@ -35,6 +36,7 @@
   }
 
   @media (min-width: @tablet_width) {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     left: auto;
@@ -65,9 +67,7 @@
   cursor: pointer;
 
   &--nojs {
-    position: absolute;
-    top: 13px;
-    right: 20px;
+    display: none;
   }
 
   &--open {

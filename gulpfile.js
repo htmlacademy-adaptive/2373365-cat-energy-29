@@ -11,6 +11,7 @@ import svgstore from 'gulp-svgstore';
 import del from 'del';
 import htmlmin from 'gulp-htmlmin';
 import csso from 'postcss-csso';
+import terser from 'gulp-terser';
 
 // Styles
 
@@ -39,6 +40,7 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src('source/js/app.js')
+    .pipe(terser())
     .pipe(rename('app.min.js'))
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
@@ -90,6 +92,7 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/**/*.{woff2,woff}',
     'source/*.ico',
+    'source/*.webmanifest',
     ], {
     base: 'source'
     })

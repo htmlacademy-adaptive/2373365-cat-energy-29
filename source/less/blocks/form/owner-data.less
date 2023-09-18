@@ -2,6 +2,7 @@
   margin: 0;
   border: none;
   padding: 0 20px 24px 20px;
+  width: 100%;
 
   @media (min-width: @tablet_width) {
     padding: 0 70px 65px 70px;
@@ -15,30 +16,16 @@
 .owner-data__title {
   margin-bottom: 35px;
 
-  &::after {
-    width: 93px;
-  }
-
   @media (min-width: @tablet_width) {
     margin-bottom: 75px;
-
-    &::before {
-      width: 30px;
-    }
-
-    &::after {
-      width: 146px;
-    }
   }
+}
 
-  @media (min-width: @desktop_width) {
-    &::before {
-      width: 70px;
-    }
+.owner-data__subtitle {
+  width: 187px;
 
-    &::after {
-      width: 778px;
-    }
+  @media (min-width: @tablet_width) {
+    width: max-content;
   }
 }
 

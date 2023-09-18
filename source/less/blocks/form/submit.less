@@ -1,12 +1,14 @@
 .submit {
   padding: 0 20px 32px 20px;
   text-align: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
 
   @media (min-width: @tablet_width) {
     padding: 0 70px 60px 71px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+    flex-direction: row;
     gap: 59px;
   }
 

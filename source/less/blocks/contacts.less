@@ -1,3 +1,7 @@
+.contacts {
+  width: 100%;
+}
+
 .contacts__list {
   list-style: none;
   padding: 20px;
@@ -67,7 +71,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 280px;
+  min-width: 280px;
   height: 34px;
 
   &:active {
@@ -80,7 +84,7 @@
   }
 
   @media (min-width: @tablet_width) {
-    width: 168px;
+    min-width: 168px;
   }
 }
 
