@@ -18,6 +18,16 @@
   margin-bottom: 36px;
   margin-left: 20px;
   position: relative;
+  display: flex;
+  gap: 20px;
+
+  &::after {
+    content: "";
+    height: 17px;
+    border-bottom: 2px solid @green;
+    margin-right: -20px;
+    flex-grow: 1;
+  }
 
   @media (min-width: @tablet_width) {
     font-size: 36px;
@@ -25,11 +35,36 @@
     margin-top: 0;
     margin-bottom: 80px;
     margin-left: 40px;
+    gap: 40px;
+
+    &::before {
+      content: "";
+      width: 30px;
+      height: 24px;
+      border-bottom: 2px solid @green;
+      margin-left: -70px;
+    }
+
+    &::after {
+      height: 24px;
+      margin-right: -70px;
+    }
   }
 
   @media (min-width: @desktop_width) {
     margin: 0;
     margin-bottom: 80px;
+
+    &::before {
+      width: 70px;
+      height: 25px;
+      margin-left: -110px;
+    }
+
+    &::after {
+      height: 25px;
+      margin-right: -110px;
+    }
   }
 }
 

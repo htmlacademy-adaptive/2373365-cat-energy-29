@@ -85,6 +85,11 @@
     border: 1px solid @light_grey_9;
   }
 
+  &:focus-visible + .control__radio,
+  &:focus-visible + .control__mark {
+    outline: 2px solid @dark_grey_2;
+  }
+
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
     appearance: none;

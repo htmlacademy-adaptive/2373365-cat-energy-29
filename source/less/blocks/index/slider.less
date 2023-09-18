@@ -97,16 +97,32 @@
 
 .slider__input {
   width: 100%;
+  height: 256px;
   outline: none;
   background: none;
+  appearance: none;
   -webkit-appearance: none; /* stylelint-disable-line */
+
+  @media (min-width: @tablet_width) {
+    height: 512px;
+  }
 
   &::-webkit-slider-thumb {
     height: 256px;
     width: 4px;
     background: none;
+    appearance: none;
     -webkit-appearance: none; /* stylelint-disable-line */
     cursor: col-resize;
+
+    @media (min-width: @tablet_width) {
+      height: 512px;
+    }
+  }
+
+  &::-moz-range-thumb {
+    height: 256px;
+    visibility: hidden;
 
     @media (min-width: @tablet_width) {
       height: 512px;

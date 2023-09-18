@@ -62,17 +62,21 @@
     margin: 0;
   }
 
+  &[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield; /* stylelint-disable-line */
+  }
+
   &:hover:not(:disabled) {
     border: 1px solid @light_grey_3;
   }
 
   &:focus:invalid {
-    border: 1px solid #ff8282;
+    outline: 2px solid @pink;
   }
 
   &:focus {
-    outline: none;
-    border: 1px solid @dark_grey_2;
+    outline: 2px solid @dark_grey_2;
   }
 
   &:disabled {
